@@ -1,0 +1,64 @@
+a{
+	text-decoration: none;
+}
+body{
+	background-color: whitesmoke;
+	font-family: Garamond;
+}
+p{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+section{
+	width: 100%;
+	height: auto; 
+	font-size: 20px; 
+
+}
+#banner{
+	width: 100%;
+	height: 50px;
+	background-color: white; 
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	text-align: center;  
+	font-size: 30px;
+}
+#starry_night{
+	width: 100%;
+	height: 700px;
+	position: relative;
+	z-index: 0;
+	background: url('../images/starry_night.jpg') no-repeat center;
+	background-size: cover;
+}
+#wrapper{
+	width: 90%;
+	height: auto; 
+	background-color: white;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+.screen_shot{
+	width: 360px;
+	height: 200px;
+	display: inline-block;
+}
+
+#port_canvas{
+	background: url('../images/port_canvas.jpg') no-repeat center;
+	background-size: cover;  
+}
+
+#animote{
+	background: url('../images/animote.png') no-repeat center;
+	background-size: cover;  
+}
+#footer{
+	width: 100%;
+	height: 100px;
+	background-color: white; 
+}
