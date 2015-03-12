@@ -2,27 +2,62 @@
 <html>
 	<head>
 		<title>Jason Yim</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
+		<!-- javascripts -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/angular_app.js"></script>
+
+		<!-- fonts/favicon -->
+		<link href='http://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+		<link rel="icon" href="images/favicon.ico">
 	</head>
-	<body>
-		<div id="banner">Jason Yim</div>
 
-		<div id="wrapper">
-			<div id="starry_night"></div>
+	<body ng-app="portfolio" ng-controller="Controller as ctrl">
 
-			<section><p>Web Projects</p>
-				<a href="#" target="_blank">
-					<div class="screen_shot" id="port_canvas"></div>
-				</a>
-				<a href="http://animote.herokuapp.com/" target="_blank">
-					<div class="screen_shot" id="animote"></div>
-				</a>								
+		<div class="container-fluid">
+		<header>
+			<nav>
+				<ul class="nav nav-pills">
+					<li><a class="nav_link" href="#home">Home</a></li>
+					<li><a class="nav_link" href="#about">About</a></li>
+					<li><a class="nav_link" href="#artwork">Artworks</a></li>
+					<li><a class="nav_link" href="#project">Projects</a></li>
+					<li><a class="nav_link" href="#resume">Resume</a></li>
+					<li><a class="nav_link" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
-			</section>
-			
-			<div id="footer"></div>
+		<div class="section background_image shanghai"><p id="home"><span>J</span>ASON <span>Y</span>IM</p></div>
+		<div class="section content" id="about">About</div>
+		<div class="section background_image texas"></div>
+		<div class="section content" id="artwork">Artworks
+			<div class="frame" ></div>
+			<div class="frame" ></div>
+			<div class="frame" ></div>
 		</div>
+		<div class="section background_image hills"></div>
+		<div class="section content" id="project">Projects
+			<div class="frame" id="tetra_taps">Tetra Taps</div>
+			<div class="frame" id="port_canvas">Port Canvas</div>
+			<div class="frame" id="animote">Animote</div>
+		</div>
+		<div class="section background_image sunrise2"></div>
 		
 		
+		<div class="section content" id="resume">Resume {{ctrl.yo}}</div>
+		
+		<div class="section background_image beach" id="contact">Contact</div>
+		<footer>&copy; {{ ctrl.date | date:'yyyy' }} Jason Yim</footer>
+		</div>
 	</body>
 </html>

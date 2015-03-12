@@ -1,64 +1,145 @@
-a{
-	text-decoration: none;
+*{
+  /*-webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;*/
 }
+
 body{
-	background-color: whitesmoke;
-	font-family: Garamond;
-}
-p{
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-section{
 	width: 100%;
-	height: auto; 
-	font-size: 20px; 
+	margin: 0;
+}
 
+.container-fluid{
+	padding: 0;
 }
-#banner{
+
+header{
 	width: 100%;
-	height: 50px;
-	background-color: white; 
+	background-color: #333;
+	font-size: 15px;
+	background: -webkit-linear-gradient(bottom right, #111,#555); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top left, #111,#555); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top left, #111,#555); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top left, #111,#555); /* Standard syntax */
 	position: fixed;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	text-align: center;  
-	font-size: 30px;
 }
-#starry_night{
+header nav{
+	float: right;	
+}
+
+nav li a{
+	text-decoration: none;
+	color:whitesmoke;
+}
+nav li a:hover{
+	text-decoration: none;
+	color:#333;
+	background: -webkit-linear-gradient(bottom right, silver, whitesmoke);  
+	background: -o-linear-gradient(top left, silver, whitesmoke);  
+	background: -moz-linear-gradient(top left, silver, whitesmoke);  
+	background: linear-gradient(to top left, silver, whitesmoke);   
+}
+nav li a:focus {
+	text-decoration: none;
+	color:#333;
+}
+.navbar{
+	border: none;
+}
+ 
+.section{ 
+	height: auto;
+	font-size: 20px;
 	width: 100%;
-	height: 700px;
-	position: relative;
-	z-index: 0;
-	background: url('../images/starry_night.jpg') no-repeat center;
-	background-size: cover;
+	height: 800px;
+	min-height: 100%;
+	min-width: 100%;
+} 
+
+.content{
+	background-color: whitesmoke;
+	background: -webkit-linear-gradient(bottom right, silver, whitesmoke);  
+	background: -o-linear-gradient(top left, silver, whitesmoke);  
+	background: -moz-linear-gradient(top left, silver, whitesmoke);  
+	background: linear-gradient(to top left, silver, whitesmoke);  
+	border-top: 15px solid darkgrey;
+	border-bottom: 15px solid darkgrey;
 }
-#wrapper{
-	width: 90%;
-	height: auto; 
-	background-color: white;
-	margin: 0 auto;
+
+.background_image{
+	-webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.shanghai{
+	background: url("../images/shanghai.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+.sunrise2{
+	background: url("../images/sunrise2a.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+.sunset{
+	background: url("../images/sunset_road.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+.hills{
+	background: url("../images/hills.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+.texas{
+	background: url("../images/texas.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+.winter{
+	background: url("../images/winter.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+.beach{
+	background: url("../images/beach.jpg") no-repeat center center fixed;
+	background-size: cover; 
+}
+
+#home span{
+	font-size: 200px;
+}
+#home{
+	font-size: 150px;
+	font-family: 'Cinzel Decorative', cursive;
 	text-align: center;
-	position: relative;
-}
-.screen_shot{
-	width: 360px;
-	height: 200px;
-	display: inline-block;
+	padding-top: 230px; 
+	color: red;
+	text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+  /*background: -webkit-linear-gradient(yellow,orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
 }
 
-#port_canvas{
-	background: url('../images/port_canvas.jpg') no-repeat center;
-	background-size: cover;  
-}
 
-#animote{
-	background: url('../images/animote.png') no-repeat center;
-	background-size: cover;  
-}
-#footer{
+footer{
 	width: 100%;
-	height: 100px;
-	background-color: white; 
+	height: 26px;
+	font-size: 12px;
+	font-family: 'Poller One', cursive;
+	color: whitesmoke;
+	padding-left: 5px;
+	padding-top: 5px; 
+	background-color: #333;
+	background: -webkit-linear-gradient(top right, #111,#555); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom left, #111,#555); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom left, #111,#555); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom left, #111,#555); /* Standard syntax */
 }
