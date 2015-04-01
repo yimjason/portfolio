@@ -26,6 +26,7 @@ header{
   background: -moz-linear-gradient(top left, #111,#555); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to top left, #111,#555); /* Standard syntax */
 	position: fixed;
+	z-index: 100;
 }
 header nav{
 	float: right;	
@@ -108,6 +109,26 @@ nav li a:focus {
 	background: url("../images/beach.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
+
+.venus{
+	/*background: url("images/venus.jpg") no-repeat center;
+	background-size: cover; */
+	margin-left: 0;
+	margin-right: 0;
+	position: relative;
+	/*top: 100px;*/
+	left: 200px;
+	padding:50px;  
+}
+
+.gallery_piece{
+	/*height: 500px;
+	margin-left: 0;
+	margin-right: 0;*/
+	position: relative;
+	z-index: 50;
+}
+
 
 #home span{
 	font-size: 200px;
