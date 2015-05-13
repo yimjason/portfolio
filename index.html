@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>Jason Yim</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,9 +15,8 @@
 		<link rel="icon" href="images/favicon.ico">
 	</head>
 
-	<body ng-app="portfolio" ng-controller="Controller as ctrl">
+	<body class="container-fluid" ng-app="portfolio" ng-controller="Controller as ctrl">
 
-		<div class="container-fluid">
 		<header>
 			<nav>
 				<ul class="nav nav-pills">
@@ -30,118 +30,125 @@
 			</nav>
 		</header>
 
-		<div class="section background_image shanghai">
-			<p id="home">
-				<span>J</span>ason <span>Y</span>im
-			</p>
-		</div>
+		<main>
+			<section class="section background_image shanghai">
+				<h1 id="home">
+					<span>J</span>ason <span>Y</span>im
+				</h1>
+			</section>
 
-		<div class="section content" id="about">
-			About
-		</div>
-		<div class="section background_image texas">
-		</div>
-
-
-		<div class="section content" id="artwork">Artworks
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			    <!-- <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-			    <li data-target="#carousel-example-generic" data-slide-to="6"></li> -->
-			  </ol>
-
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-			      <div class="gallery_piece">
-			      	<img class="venus" height="700px;" src="images/venus.jpg" >
-				      <div class="carousel-caption">
-				    </div>    
-			      </div>
-			    </div>
-			    <div class="item background_image">
-			    	<div class="gallery_piece">
-				      <img height="700px;" src="images/lake_champlain.jpg" >
-				      <div class="carousel-caption">
-			      </div>  
-			      </div>
-			    </div>
-			    <div class="item background_image">
-			    	<div class="gallery_piece">
-				      <img height="700px;" src="images/hammock_girl.jpg" >
-				      <div class="carousel-caption">
-			      </div>  
-			      </div>
-			    </div>
-			    <!-- <div class="item background_image">
-			    	<div class="gallery_piece">
-				      <img height="700px;" src="images/starry_night.jpg" >
-				      <div class="carousel-caption">
-			      </div>  
-			      </div>
-			    </div>
-			    <div class="item background_image">
-			    	<div class="gallery_piece">
-				      <img height="700px;" src="images/courbet.jpg" >
-				      <div class="carousel-caption">
-			      </div>  
-			      </div>
-			    </div>
-			    <div class="item background_image">
-			    	<div class="gallery_piece">
-				      <img height="700px;" src="images/titian.jpg" >
-				      <div class="carousel-caption">
-			      </div>  
-			      </div>
-			    </div>
-			    <div class="item background_image">
-			    	<div class="gallery_piece">
-				      <img height="700px;" src="images/sunset_lamp.jpg" >
-				      <div class="carousel-caption">
-			      </div>  
-			      </div>
-			    </div> -->
-			  </div>
-
-			  <!-- Controls -->
-			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
+			<section class="section content" id="about">
+				About
+			</section>
+			<div class="section background_image texas">
 			</div>
-		</div>
 
 
-		<div class="section background_image hills">
-		</div>
+			<section class="section content" id="artwork">
+				<h2>Artworks</h2>
+				
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				    <!-- <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="6"></li> -->
+				  </ol>
 
-		<div class="section content" id="project">Projects
-			<div class="frame" id="tetra_taps">Tetra Taps</div>
-			<div class="frame" id="port_canvas">Port Canvas</div>
-			<div class="frame" id="animote">Animote</div>
-		</div>
-		
-		<div class="section background_image sunrise2">
-		</div>
-		
-		
-		<div class="section content" id="resume">
-			Resume
-		</div>
-		
-		<div class="section background_image beach" id="contact">Contact</div>
-		<footer>&copy; {{ ctrl.date | date:'yyyy' }} Jason Yim</footer>
-		</div>
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <div class="gallery_piece">
+				      	<img class="venus" height="700px;" src="images/venus.jpg" >
+					      <div class="carousel-caption">
+					    </div>    
+				      </div>
+				    </div>
+				    <div class="item background_image">
+				    	<div class="gallery_piece">
+					      <img height="700px;" src="images/lake_champlain.jpg" >
+					      <div class="carousel-caption">
+				      </div>  
+				      </div>
+				    </div>
+				    <div class="item background_image">
+				    	<div class="gallery_piece">
+					      <img height="700px;" src="images/hammock_girl.jpg" >
+					      <div class="carousel-caption">
+				      </div>  
+				      </div>
+				    </div>
+				    <!-- <div class="item background_image">
+				    	<div class="gallery_piece">
+					      <img height="700px;" src="images/starry_night.jpg" >
+					      <div class="carousel-caption">
+				      </div>  
+				      </div>
+				    </div>
+				    <div class="item background_image">
+				    	<div class="gallery_piece">
+					      <img height="700px;" src="images/courbet.jpg" >
+					      <div class="carousel-caption">
+				      </div>  
+				      </div>
+				    </div>
+				    <div class="item background_image">
+				    	<div class="gallery_piece">
+					      <img height="700px;" src="images/titian.jpg" >
+					      <div class="carousel-caption">
+				      </div>  
+				      </div>
+				    </div>
+				    <div class="item background_image">
+				    	<div class="gallery_piece">
+					      <img height="700px;" src="images/sunset_lamp.jpg" >
+					      <div class="carousel-caption">
+				      </div>  
+				      </div>
+				    </div> -->
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</section>
+
+
+			<div class="section background_image hills">
+			</div>
+
+			<section class="section content" id="project">Projects
+				<div class="frame" id="tetra_taps">Tetra Taps</div>
+				<div class="frame" id="port_canvas">Port Canvas</div>
+				<div class="frame" id="animote">Animote</div>
+			</section>
+			
+			<div class="section background_image sunrise2">
+			</div>
+			
+			
+			<section class="section content" id="resume">
+				<h2>Resume</h2>
+			</section>
+			
+			<div class="section background_image beach" id="contact">Contact</div>
+
+		</main>
+
+		<footer>
+			&copy; {{ ctrl.date | date:'yyyy' }} Jason Yim
+		</footer>
 
 		<!-- javascripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
