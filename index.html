@@ -7,109 +7,119 @@
 
 		<!-- stylesheets -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
 		
-		<!-- fonts/favicon -->
+		<!-- fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+
+		<!-- favicon -->
 		<link rel="icon" href="images/favicon.ico">
 	</head>
 
 	<body class="container-fluid" ng-app="portfolio" ng-controller="Controller as ctrl">
 
-		<header>
+		<header class="row">
 			<nav>
 				<ul class="nav nav-pills">
 					<li><a class="nav_link" href="#home">Home</a></li>
-					<li><a class="nav_link" href="#about">About</a></li>
+					<!-- <li><a class="nav_link" href="#about">About</a></li> -->
 					<li><a class="nav_link" href="#artwork">Artworks</a></li>
 					<li><a class="nav_link" href="#project">Projects</a></li>
-					<li><a class="nav_link" href="#resume">Resume</a></li>
+					<!-- <li><a class="nav_link" href="#resume">Resume</a></li> -->
 					<li><a class="nav_link" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main>
-			<section class="section background_image shanghai">
-				<h1 id="home">
+			<section class="section background_image shanghai row">
+				<h1 id="home" class="col-xs-12 col-md-12 col-lg-12">
 					<span>J</span>ason <span>Y</span>im
 				</h1>
 			</section>
 
-			<section class="section content" id="about">
+			<!-- <section class=" content" id="about">
 				About
 			</section>
 			<div class="section background_image texas">
-			</div>
+			</div> -->
 
 
-			<section class="section content" id="artwork">
+			<section class="row content" id="artwork">
 				<h2>Artworks</h2>
 				
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<div id="carousel-example-generic" class="carousel slide row" data-ride="carousel">
 				  <!-- Indicators -->
 				  <ol class="carousel-indicators">
 				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				    <!-- <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 				    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
 				    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-				    <li data-target="#carousel-example-generic" data-slide-to="6"></li> -->
+				    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
 				  </ol>
 
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active">
-				      <div class="gallery_piece">
-				      	<img class="venus" height="700px;" src="images/venus.jpg" >
-					      <div class="carousel-caption">
-					    </div>    
+				      <div class="gallery_piece row">
+				      	<div class="col-sm-1 col-md-2 col-lg-3"></div>
+				      	<img class="col-xs-12 col-sm-10 col-md-8 col-lg-6" src="images/venus.jpg" alt="">
+				      	<div class="col-sm-1 col-md-2 col-lg-3"></div>
+					      <div class="carousel-caption"></div>    
 				      </div>
 				    </div>
 				    <div class="item background_image">
-				    	<div class="gallery_piece">
-					      <img height="700px;" src="images/lake_champlain.jpg" >
-					      <div class="carousel-caption">
-				      </div>  
+				    	<div class="gallery_piece row"> 
+				    		<div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
+					      <img class="col-xs-10 col-sm-8 col-md-6 col-lg-6" src="images/lake_champlain.jpg" alt="">
+					      <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
+					      <div class="carousel-caption"></div>  
 				      </div>
 				    </div>
 				    <div class="item background_image">
-				    	<div class="gallery_piece">
-					      <img height="700px;" src="images/hammock_girl.jpg" >
-					      <div class="carousel-caption">
-				      </div>  
-				      </div>
-				    </div>
-				    <!-- <div class="item background_image">
-				    	<div class="gallery_piece">
-					      <img height="700px;" src="images/starry_night.jpg" >
-					      <div class="carousel-caption">
-				      </div>  
+				    	<div class="gallery_piece row">
+				    		<div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
+					      <img class="col-xs-10 col-sm-8 col-md-6 col-lg-6" src="images/hammock_girl.jpg" alt="">
+					      <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
+					      <div class="carousel-caption"></div>  
 				      </div>
 				    </div>
 				    <div class="item background_image">
-				    	<div class="gallery_piece">
-					      <img height="700px;" src="images/courbet.jpg" >
-					      <div class="carousel-caption">
-				      </div>  
+				    	<div class="gallery_piece row">
+				    		<div class="col-sm-1 col-md-2 col-lg-2"></div>
+					      <img class="col-xs-12 col-sm-10 col-md-8 col-lg-8" src="images/starry_night.jpg" alt="">
+					      <div class="col-sm-1 col-md-2 col-lg-2"></div>
+					      <div class="carousel-caption"></div>  
 				      </div>
 				    </div>
 				    <div class="item background_image">
-				    	<div class="gallery_piece">
-					      <img height="700px;" src="images/titian.jpg" >
-					      <div class="carousel-caption">
-				      </div>  
+				    	<div class="gallery_piece row">
+				    		<div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
+					      <img class="col-xs-6 col-sm-6 col-md-4 col-lg-3" src="images/courbet.jpg" alt="">
+					      <div class="col-xs-3 col-sm-3 col-md-4 col-lg-4"></div>
+					      <div class="carousel-caption"></div>  
 				      </div>
 				    </div>
 				    <div class="item background_image">
-				    	<div class="gallery_piece">
-					      <img height="700px;" src="images/sunset_lamp.jpg" >
-					      <div class="carousel-caption">
-				      </div>  
+				    	<div class="gallery_piece row">
+				    		<div class="col-xs-3 col-sm-4 col-md-4 col-lg-4"></div>
+					      <img class="col-xs-6 col-sm-4 col-md-4 col-lg-3" src="images/titian.jpg" alt="">
+					      <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4"></div>
+					      <div class="carousel-caption"></div>  
 				      </div>
-				    </div> -->
+				    </div>
+				    <div class="item background_image">
+				    	<div class="gallery_piece row">
+				    		<div class="col-xs-1 col-sm-2 col-md-3 col-lg-4"></div>
+					      <img class="col-xs-10 col-sm-8 col-md-6 col-lg-4" src="images/sunset_lamp.jpg" alt="">
+					      <div class="col-xs-1 col-sm-2 col-md-3 col-lg-4"></div>
+					      <div class="carousel-caption"></div>  
+				      </div>
+				    </div>
 				  </div>
 
 				  <!-- Controls -->
@@ -125,28 +135,29 @@
 			</section>
 
 
-			<div class="section background_image hills">
+			<div class="row section background_image hills">
 			</div>
 
-			<section class="section content" id="project">Projects
+			<section class="row content" id="project">
+				<h2>Projects</h2>
 				<div class="frame" id="tetra_taps">Tetra Taps</div>
 				<div class="frame" id="port_canvas">Port Canvas</div>
 				<div class="frame" id="animote">Animote</div>
 			</section>
 			
-			<div class="section background_image sunrise2">
-			</div>
+			<!-- <div class="section background_image sunrise2">
+			</div> -->
 			
 			
-			<section class="section content" id="resume">
+			<!-- <section class="section content" id="resume">
 				<h2>Resume</h2>
-			</section>
+			</section> -->
 			
-			<div class="section background_image beach" id="contact">Contact</div>
+			<div class="row section background_image beach" id="contact">Contact</div>
 
 		</main>
 
-		<footer>
+		<footer class="row">
 			&copy; {{ ctrl.date | date:'yyyy' }} Jason Yim
 		</footer>
 

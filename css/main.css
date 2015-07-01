@@ -9,13 +9,9 @@
 }
 
 body{
-	width: 100%;
 	margin: 0;
 }
-
-.container-fluid{
-	padding: 0;
-}
+ 
 
 header{
 	width: 100%;
@@ -48,20 +44,22 @@ nav li a:focus {
 	text-decoration: none;
 	color:#333;
 }
+
+section h2{
+	font-size: 18px;
+	text-align: center;
+}
 .navbar{
 	border: none;
 }
  
-.section{ 
-	height: auto;
+.section{  
 	font-size: 20px;
-	width: 100%;
-	height: 100vh;
-	min-height: 100%;
-	min-width: 100%;
+	height: 100vh; 
 } 
 
-.content{
+.content{ 
+	height: 100vh; 
 	background-color: whitesmoke;
 	background: -webkit-linear-gradient(bottom right, silver, whitesmoke);  
 	background: -o-linear-gradient(top left, silver, whitesmoke);  
@@ -110,34 +108,22 @@ nav li a:focus {
 	background-size: cover; 
 }
 
-.venus{
-	/*background: url("images/venus.jpg") no-repeat center;
-	background-size: cover; */
-	margin-left: 0;
-	margin-right: 0;
-	position: relative;
-	/*top: 100px;*/
-	left: 200px;
-	padding:50px;  
-}
+.gallery_piece{ 
+	height: 80vh;
+	padding: 20px;
+	background-color: aliceblue;
+} 
 
-.gallery_piece{
-	/*height: 500px;
-	margin-left: 0;
-	margin-right: 0;*/
-	position: relative;
-	z-index: 50;
-}
-
+ 
 
 #home span{
-	font-size: 200px;
+	font-size: 130px;
 }
 #home{
-	font-size: 150px;
+	font-size: 100px;
 	font-family: 'Cinzel Decorative', cursive;
 	text-align: center;
-	padding-top: 230px; 
+	padding: 200px 20px 20px 20px; 
 	color: red;
 	text-shadow:
     -2px -2px 0 #000,
@@ -151,7 +137,6 @@ nav li a:focus {
 
 
 footer{
-	width: 100%;
 	height: 26px;
 	font-size: 12px;
 	font-family: 'Poller One', cursive;
@@ -164,3 +149,9 @@ footer{
   background: -moz-linear-gradient(bottom left, #111,#555); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom left, #111,#555); /* Standard syntax */
 }
+
+
+@media (max-width: @screen-xs-max) { ... }
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
