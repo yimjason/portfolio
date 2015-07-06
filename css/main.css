@@ -80,31 +80,31 @@ section h2{
 }
 
 .shanghai{
-	background: url("../images/shanghai.jpg") no-repeat center center fixed;
+	background: url("../images/background_images/shanghai.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
 .sunrise2{
-	background: url("../images/sunrise2a.jpg") no-repeat center center fixed;
+	background: url("../images/background_images/sunrise2a.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
 .sunset{
-	background: url("../images/sunset_road.jpg") no-repeat center center fixed;
+	background: url("../images/background_images/sunset_road.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
 .hills{
-	background: url("../images/hills.jpg") no-repeat center center fixed;
+	background: url("../images/background_images/hills.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
 .texas{
-	background: url("../images/texas.jpg") no-repeat center center fixed;
+	background: url("../images/background_images/texas.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
 .winter{
-	background: url("../images/winter.jpg") no-repeat center center fixed;
+	background: url("../images/background_images/winter.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
 .beach{
-	background: url("../images/beach.jpg") no-repeat center center fixed;
+	background: url("../images/background_images/beach.jpg") no-repeat center center fixed;
 	background-size: cover; 
 }
 
