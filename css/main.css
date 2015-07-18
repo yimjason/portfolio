@@ -76,7 +76,7 @@ section h2{
 } 
 .windows{
 	background: url("../images/background_images/windows.jpg") no-repeat fixed;
-	background-size: cover; 
+	background-size: cover;  
 }
 .work{
 	background: url("../images/background_images/work.jpg") no-repeat fixed;
