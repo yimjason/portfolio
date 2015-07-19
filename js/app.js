@@ -1,15 +1,22 @@
 $( document ).ready(function() {
-  
+  // var current_position = window.pageYOffset; 
+  // console.log($("#artwork").offset().top);
+		// var artwork = $("#artwork").offset().top-38;
+		// console.log("curr:" + current_position);
+		// if(current_position > artwork){
+		// 	console.log("hey");
+		// 	$("nav").children().first().children().first().next().children().first().css("background-color", "whitesmoke");
+		// }
+
 	//**************SMOOTH SCROLL NAVIGATION************
 	$(".nav_link").click(function(event){
 		event.preventDefault();
-		var current_position = window.pageYOffset;
-		console.log(current_position);
-		var dest = $(this.hash).offset().top-38;
-		console.log("dest: "+dest); 
+		var current_position = window.pageYOffset; 
+		var dest = $(this.hash).offset().top-38; 
 		var distance = Math.abs(dest - current_position);
 		var speed = 2.5;
 		var time = distance/speed;
+ 
 		if(current_position<dest){
 			var sling	= -(distance/20);
 			var overshoot = distance/20;
@@ -17,8 +24,7 @@ $( document ).ready(function() {
 			sling = distance/20;
 			overshoot = -distance/20;
 		}
-		if(current_position != 0){
-			console.log('hey');
+		if(current_position != 0){ 
 			$('html,body').animate({scrollTop:current_position+sling}, time/2.3,'swing');
 		}
 		if(dest != -38){
