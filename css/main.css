@@ -163,8 +163,7 @@ footer{
 	}
 
 	#home{font-size: 5em;}
-	#home span{font-size: 1.2em;}
-	.thumbnail{height: 300px;}
+	#home span{font-size: 1.2em;} 
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -173,8 +172,7 @@ footer{
 		width: 60%;  
 	}
 	#home{font-size: 6em;}
-	#home span{font-size: 1.2em;}
-	.thumbnail{height: 250px;}
+	#home span{font-size: 1.2em;} 
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -183,6 +181,5 @@ footer{
 		width: 40%;   
 	}
 	#home{font-size: 150px;}
-	#home span{font-size: 200px;}
-	.thumbnail{height: 380px;}
+	#home span{font-size: 200px;} 
 }
