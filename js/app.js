@@ -1,4 +1,31 @@
+// document.getElementById('nav_icon').style.display = "none";  
+// function reveal(){ 
+// 	if(document.getElementById('nav').style.display == "none"){
+// 		document.getElementById('nav').style.display = "block"; 
+// 	}else if(document.getElementById('nav').style.display == "block") {
+// 		document.getElementById('nav').style.display = "none";
+		 
+// 	} 
+// }
+
+
 $( document ).ready(function() {
+	// $(window).resize(function() {
+ //    if(this.resizeTO) clearTimeout(this.resizeTO);
+ //    this.resizeTO = setTimeout(function() {
+ //        $(this).trigger('resizeEnd');
+ //    }, 0);
+	// });
+
+	// $(window).bind('resizeEnd', function() { 
+	// 	if($(this).width() < 767){
+	// 		document.getElementById('nav').style.display = "none";
+	// 		document.getElementById('nav_icon').style.display = "block"; 
+	// 	}else{
+	// 		document.getElementById('nav').style.display = "block";
+	// 		document.getElementById('nav_icon').style.display = "none"; 
+	// 	}	
+	// });
  
 	$(".nav_link").click(function(event){
 		event.preventDefault();
