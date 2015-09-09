@@ -1,5 +1,6 @@
-#coverflow { 
-	height: 60vh;
+#coverflow {
+	max-width: 1200px;
+	height: 500px;
 	background: rgba(0, 0, 0, 0);
 	position: relative;
 	margin: 0 auto;
@@ -68,14 +69,14 @@
 	display: block;
 }
 
-/*#coverflow .refl::before {
+#coverflow .refl::before {
 	content: "";
 	position: absolute;
-	width: 100%;
+	width: 102%;
 	margin-left: -1%;
 	height: 100%;
 	box-shadow: inset #fff 0 167.5px 50px;
-}*/
+}
 
 #coverflow .text {
 	position: absolute;
