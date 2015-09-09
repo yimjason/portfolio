@@ -96,7 +96,10 @@ section{font-size: 20px;}
 .content{   
 	border-top: 20px solid #111; 
 }
- 
+.balloons{
+	background: url("../images/background_images/balloons.jpg") no-repeat fixed;
+	background-size: cover; 
+}  
 .birds{
 	background: url("../images/background_images/birds.jpg") no-repeat fixed;
 	background-size: cover; 
