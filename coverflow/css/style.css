@@ -3,10 +3,10 @@
 	background: rgba(0, 0, 0, 0);
 	position: relative;
 	margin: 0 auto;
-	-moz-user-select: none;
+	/*-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
+	user-select: none;*/
 	outline: solid 0px;
 }
 
@@ -44,7 +44,7 @@
 	width: 250px;
 	-webkit-transition: -webkit-transform 0.5s ease;
 	transition: transform 0.5s ease;
-	pointer-events: auto;
+	/*pointer-events: auto;*/
 	position: relative;
 	display: block;
 	box-shadow: 30px 5px 15px -10px rgba(0,0,0,0.15), -30px 5px 15px -10px rgba(0,0,0,0.15);
