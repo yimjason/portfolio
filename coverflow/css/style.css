@@ -74,8 +74,7 @@
 	position: absolute;
 	width: 102%;
 	margin-left: -1%;
-	height: 100%;
-	box-shadow: inset #fff 0 167.5px 50px;
+	height: 100%; 
 }
 
 #coverflow .text {
