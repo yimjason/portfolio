@@ -1,262 +1,799 @@
 <!doctype html>
-<html>
-	<head>
-		<title>Jason Yim</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- stylesheets --> 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/main.css"> 
-		
-		<!-- fonts -->
-		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+<html lang="en">
 
-		<!-- favicon -->
-		<link rel="icon" href="images/favicon.ico">
-		
-		 
-	</head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee|Josefin+Sans" rel="stylesheet">
+  <title>Jason Yim</title>
+  <style type="text/css">
+  body {
+    font-size: 10px;
+    font-family: 'Josefin Sans', helvetica, sans-serif;
+  }
 
-	<body ng-app="portfolio" ng-controller="Controller as ctrl">
-		<nav class="navbar navbar-inverse">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
-		      </button>
-		      <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav"> 
-		        
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		         <li><a class="nav_link" href="#home">Home</a></li> 
-						<li><a class="nav_link" href="#about">About</a></li>
-						<!-- <li><a class="nav_link" href="#artwork">Artworks</a></li> -->
-						<li><a class="nav_link" href="#project">Projects</a></li>
-						<li><a href="https://docs.google.com/document/d/1ieei-OpcFcw1XEFWUqWsXIRr8UirWitF2MvjURDl3Qk/edit?usp=sharing" target="_blank">Resume</a></li>
-						<li><a class="nav_link" href="#contact">Contact</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav> 
- 
-		<main class="container-fluid">
-			<section class="balloons row" id="home"> 
-				<h1>
-					<span>J</span>ason <span>Y</span>im
-				</h1> 
-			</section> 
+  nav {
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1.5em;
+  }
 
-			<section class="content" id="about">
-				<h2>About Me</h2>
-				<div></div>
-				<figure>
-					<img src="images/self/0.jpg">
-				</figure>	
-				
-				<div class="row">
-					<div class="col-xs-12 col-sm-2 col-md-3 col-lg-4"></div>
-					<div class="col-xs-12 col-sm-8 col-md-6 col-lg-4">
-						<p>
-							I’m an Artist and Coder. I like to explore and unravel the mysteries of our world. For now, I wish to use my creativity and mastery of programming to create awesome things.
-						</p>
-				</div> 
-				</div>
-				
-				
-			</section>
+  nav a,
+  nav a:hover{
+    color: black;
+  }
 
-<!-- 			<section class="row content" id="artwork">
-				<h2>Artworks</h2> -->
-				 
-<!-- <figure>
-	<img class="img-responsive" src="images/artworks/courbet.jpg" alt="">
-</figure>
-<figure>
-	<img class="img-responsive" src="images/artworks/hammock_girl.jpg" alt="">
-</figure>
-<figure>
-	<img class="img-responsive" src="images/artworks/lake_champlain.jpg" alt="">
-</figure>
-<figure>
-	<img class="img-responsive" src="images/artworks/starry_night.jpg" alt="">
-</figure>
-<figure>
-	<img class="img-responsive" src="images/artworks/sunset_lamp.jpg" alt="">
-</figure>
-<figure>
-	<img class="img-responsive" src="images/artworks/titian.jpg" alt="">
-</figure>
-<figure>
-	<img class="img-responsive" src="images/artworks/venus.jpg" alt="">
-</figure> 
-			</section> -->
- 
 
-			<section class="row content work" id="project">
-				<h2>Projects</h2>
-				<div class="row">	
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">					
-							<a class="thumbnail flip-card" id="darts" 
-						   href="https://yimjason.github.io/darts/" target="_blank">
-						   <figure class="flip-card-inner">
-						   		<div class="flip-card-front">
-										<img src="images/projects/darts.png">
-									</div>
-									<div class="flip-card-back">	
-										<h3>Darts</h3>
-										<p>Made a dart board for the browser.</p>
-									</div>
-							</figure>
-							</a>
-					</div> 
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">					
-							<a class="thumbnail flip-card" id="asteroids" 
-						   href="https://yimjason.github.io/asteroids/" target="_blank">
-						   <figure class="flip-card-inner">
-						   		<div class="flip-card-front">
-										<img src="images/projects/asteroids.png">
-									</div>
-									<div class="flip-card-back">	
-										<h3>Asteroids</h3>
-										<p>My version of Asteroids for the browser.</p>
-									</div>
-							</figure>
-							</a>
-					</div>  
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">					
-							<a class="thumbnail flip-card" id="freecell" 
-						   href="https://yimjason.github.io/freecell/" target="_blank">
-						   <figure class="flip-card-inner">
-						   		<div class="flip-card-front">
-										<img src="images/projects/freecell.png">
-									</div>
-									<div class="flip-card-back">	
-										<h3>Freecell</h3>
-										<p>Freecell for the browser.</p>
-									</div>
-							</figure>
-							</a>
-					</div> 
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">					
-							<a class="thumbnail flip-card" id="mine_sweeper" 
-						   href="https://yimjason.github.io/mine_sweeper/" target="_blank">
-						   <figure class="flip-card-inner">
-						   		<div class="flip-card-front">
-										<img src="images/projects/mine_sweeper.png">
-									</div>
-									<div class="flip-card-back">	
-										<h3>Mine Sweeper</h3>
-										<p>Mine sweeper for the browser.</p>
-									</div>
-							</figure>
-							</a>
-					</div> 
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">					
-							<a class="thumbnail flip-card" id="connect_four" 
-						   href="https://yimjason.github.io/connect_four/" target="_blank">
-						   <figure class="flip-card-inner">
-						   		<div class="flip-card-front">
-										<img src="images/projects/connect_four.png">
-									</div>
-									<div class="flip-card-back">	
-										<h3>Connect Four</h3>
-										<p>Connect four for the browser.</p>
-									</div>
-							</figure>
-							</a>
-					</div>
- 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">					
-							<a class="thumbnail flip-card" id="tetra_taps" 
-						   href="https://yimjason.github.io/tetra_taps/" target="_blank">
-						   <figure class="flip-card-inner">
-						   		<div class="flip-card-front">
-										<img src="images/projects/tetra_taps.png">
-									</div>
-									<div class="flip-card-back">	
-										<h3>Tetra Taps</h3>
-										<p>Its a simon game. Made with AngularJS.</p>
-									</div>
-							</figure>
-							</a>
-					</div>
-  				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card">					
-							<a class="thumbnail flip-card" id="port_canvas" 
-						    href="https://portcanvas.herokuapp.com/" target="_blank">
-						   <figure class="flip-card-inner">
-						   		<div class="flip-card-front">
-										<img src="images/projects/port_canvas.png">
-									</div>
-									<div class="flip-card-back">	
-										<h3>Port Canvas</h3>
-										<p>A drawing app that connects multiple users to the same canvas.</p>
-									</div>
-							</figure>
-							</a>
-					</div>
-					 
-					 
+  #app>section>div {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.8em;
+  }
 
-				</div>	 
-			</section> 
-			
-			<section class="row content" id="contact">
-				<h2>Contact</h2>
-				<article> 
-					<h3>Jason Yim</h3>
-					<p>
-						Email: 
-						<a href="mailto:yimjason00@gmail.com?" target="_top"> yimjason00@gmail.com</a>
-					</p> 
-					<a href="https://github.com/yimjason" target="_blank">
-						<i class="fa fa-github-alt fa-2x"></i> 
-					</a> 
-					<a href="https://www.linkedin.com/pub/jason-yim/a3/335/380" target="_blank">
-						<i class="fa fa-linkedin-square fa-2x"></i> 
-					</a> 
-				</article>
-			</section>
+  #about {
+    text-align: center;
+    padding: 1rem;
+    background-color: whitesmoke;
+  }
 
-		</main>
+  #about img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ccc;
+    margin-bottom: 1rem;
+  }
 
-		<footer>
-			<p>&copy; {{ ctrl.date | date:'yyyy' }} Jason Yim</p>
-		</footer>
+  #about .summary {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
 
-		<!-- javascripts -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> 
-		<script type="text/javascript" src="js/app.js"></script>
-		<script type="text/javascript" src="js/angular.js"></script>
-		<script type="text/javascript" src="js/angular_app.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-// 			var slideIndex = 1;
-// showDivs(slideIndex);
+  #about .skills ul {
+    list-style: none;
+    padding: 0;
+  }
 
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
+  #about .skills li {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 2px;
+    background-color: white;
+  }
 
-// function showDivs(n) {
-//   var i;
-//   var x = document.getElementsByClassName("mySlides");
-//   if (n > x.length) {slideIndex = 1} 
-//   if (n < 1) {slideIndex = x.length} ;
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none"; 
-//   }
-//   x[slideIndex-1].style.display = "block"; 
-// }
-		</script>
- 
-	</body>
+  #websites {
+    padding: 2rem;
+  }
+
+  #websites .gallery-item:nth-child(odd) {
+    background-color: #eaeaea;
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
+    clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
+    padding: 3rem;
+  }
+
+
+  #games {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: whitesmoke;
+  }
+
+  #games .techs {
+    list-style: none;
+    padding: 0;
+  }
+
+  #games .techs li {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 2px;
+    background-color: transparent;
+  }
+
+  #games .gallery {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+    margin: 0 auto;
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid #111;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:active .flip-card-inner {
+    /*transform: rotateY(180deg);*/
+  }
+
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #222;
+    padding: 1rem;
+  }
+
+  #artworks {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: whitesmoke;
+  }
+
+  #artworks .gallery {
+    margin: 2rem 0 2rem 0;
+    min-height: 800px;
+  } 
+  #artworks .gallery .item {
+    margin: 0 auto;
+    max-width: 700px;
+  } 
+  #artworks .gallery .item img{
+    margin-bottom: 1rem;
+  }
+  #artworks .gallery .item p {
+    text-align: left;
+  }
+
+
+
+  .carousel-indicators {
+    position: relative;      
+  } 
+
+  #contact {
+    background-color: whitesmoke;
+    height: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+    min-height: 180px;
+    margin: 0 auto;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #splash {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    overflow: hidden;
+    background-color: black;
+  }
+
+  #splash .box {
+    padding: 4px;
+  }
+
+  #splash .artifact {
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+  }
+
+  #splash .square {
+    /*border: 5px solid black;*/
+    /*box-shadow: 3px 3px 3px #aaa;*/
+    border-radius: 50%;
+  }
+
+  #splash .frame {
+    /*border: 5px solid black; */
+    display: flex;
+    align-items: center;
+    /*box-shadow: 3px 3px 3px #aaa;*/
+    border-radius: 15px;
+    transition: 0.8s;
+  }
+
+  #splash .frame .inner-frame {
+    /*border: 5px solid black;*/
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+  }
+
+  </style>
+</head>
+
+<body>
+  <nav></nav>
+  <main></main>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  Number.prototype.forEvery = function(fn) {
+    var l = this;
+    for (var x = 0; x < l; x++) {
+      if (fn) { fn(x); }
+    }
+  };
+  Number.prototype.isOdd = function() { return this % 2; }
+
+  function getData(path, fn) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", path, true);
+    xhr.onreadystatechange = function(e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          if (fn) {
+            fn(JSON.parse(xhr.responseText));
+          }
+        } else {
+          console.error(xhr.statusText);
+        }
+      }
+    };
+    xhr.onerror = function(e) {
+      console.error(xhr.statusText);
+    };
+    xhr.send();
+  }
+
+  function BuildApp(data) {
+    var app = new App(data);
+    var nav = document.getElementsByTagName('nav')[0];
+    var main = document.getElementsByTagName('main')[0];
+    // nav.innerHTML = app.nav;
+    main.innerHTML = app.html;
+    app.components.forEach(function(component) {
+      component.performJavascriptFunctions();
+    });
+  }
+
+  class Component {
+    constructor(data, tagName) {
+      this.data = data;
+      this.tagName = tagName ? tagName : 'div';
+      this.name = this.data.name;
+      this.content = this.data.content;
+      this.gallery = this.data.gallery;
+      this.html = this.fill();
+    }
+    fill() {
+      return '<' + this.tagName + '></' + this.tagName + '>\r';
+    }
+    performJavascriptFunctions() {
+
+    }
+  }
+
+  class App extends Component {
+    constructor(data) {
+      super(data);
+      this.nav = this.createNav();
+    }
+    fill() {
+      var text = '';
+      var self = this;
+      this.components = [];
+      text += '<div id="' + this.name + '">\r';
+      this.gallery.forEach(function(item, index) {
+        if (!item.display) { return; }
+        var name = item.name;
+        var component;
+        switch (name) {
+          case 'splash':
+            self.splash = component = new Splash(item);
+            break;
+          case 'about':
+            self.about = component = new About(item);
+            break;
+          case 'websites':
+            self.websites = component = new Websites(item);
+            break;
+          case 'games':
+            self.games = component = new Games(item);
+            break;
+          case 'artworks':
+            self.artworks = component = new Artworks(item);
+            break;
+          case 'contact':
+            self.contact = component = new Contact(item);
+            break;
+          default:
+            component = new Component(item, 'section');
+        }
+        self.components.push(component);
+        text += component.html;
+      });
+      text += '</div>\r';
+      return text;
+    }
+    createNav() {
+      var text = '';
+      text += '<nav>\r';
+      text += '<ul class="nav justify-content-end">\r';
+
+      this.gallery.forEach(function(item, index) {
+        if (!item.display) { return; }
+        var name = item.name;
+        text += '<li class="nav-item">\r';
+        text += '<a class="nav-link active" href="#' + name + '">' + item.content.title + '</a>\r';
+        text += '</li>\r';
+      });
+
+      text += '</ul>\r';
+      text += '</nav>\r';
+      return text;
+    }
+  }
+
+  class Splash extends Component {
+    constructor(data) {
+      super(data);
+      this.maxWidth = 2400;
+      this.maxHeight = 1200;
+      this.boxSize = 100;
+    }
+    fill() {
+      var text = '';
+      text += '<section class="row" id="splash">\r';
+      text += '</section>\r';
+      return text;
+    }
+    performJavascriptFunctions() {
+      function rand(min, max) {
+        return Math.floor(Math.random() * (max - min) - min);
+      }
+      class Theme {
+        constructor(name, colors) {
+          this.name = name;
+          this.colors = colors;
+        }
+        getColor() {
+          return this.colors[rand(0, this.colors.length)];
+        }
+      }
+      var variants = [
+        'square',
+        'square',
+        'square',
+        'square',
+        'none',
+        'none',
+        'frame',
+        'frame',
+        'frame',
+        'none',
+      ];
+      var self = this;
+      var current_theme = getNewTheme();
+
+      function getNewTheme() {
+        var themes = [
+          new Theme('red',
+            [
+              '#cc0000', //red
+              '#ff6600', //orange 
+              '#800000', //brick-red
+              '#b32d00', //sienna
+              '#009900', //green
+              '#ff5050', //sunset-red
+            ]),
+          new Theme('blue',
+            [
+              '#0066ff', //blue
+              '#4dffff', //cyan
+              '#00ccff', //turquois
+              '#3366ff', //summer-blue
+              '#ccccff', //lavender
+              '#0000cc', //indigo  
+            ]),
+          new Theme('green',
+            [
+              '#009900', //green  
+              '#006600', //dark-green 
+              '#ffcc66', //sand
+              '#b32d00', //sienna
+              '#ffff00', //yellow
+            ]),
+          new Theme('purple',
+            [
+              '#ccccff', //lavender 
+              '#3366ff', //summer-blue 
+              '#6600ff', //purple
+              '#ff5050', //sunset-red
+              '#ffccff', //pink 
+              '#cc0000', //red
+            ]),
+          new Theme('yellow',
+            [
+              '#ff6600', //orange
+              '#ffff00', //yellow
+              '#ffcc66', //sand
+              '#ff5050', //sunset-red 
+            ]),
+          new Theme('rainbow',
+            [
+              '#cc0000', //red
+              '#ff6600', //orange
+              '#ffff00', //yellow
+              '#009900', //green  
+              '#006600', //dark-green 
+              '#ffccff', //pink 
+              '#ff5050', //sunset-red
+              '#800000', //brick-red
+              '#b32d00', //sienna 
+              '#ffcc66', //sand
+              '#6600ff', //purple
+              '#0066ff', //blue
+              '#4dffff', //cyan
+              '#00ccff', //turquois
+              '#3366ff', //summer-blue
+              '#ccccff', //lavender  
+              '#0000cc', //indigo 
+            ]),
+        ];
+        return themes[rand(0, themes.length)];
+      }
+
+      function makeBoxes(obj) {
+        var number_of_boxes = (obj.maxHeight * obj.maxWidth) / (obj.boxSize * obj.boxSize);
+        number_of_boxes.forEvery(function(number) {
+          $('#splash').append('<div class="box"></div>');
+        });
+        $('#splash').css('max-width', obj.maxWidth + 'px');
+        $('#splash').css('max-height', obj.maxHeight + 'px');
+        $('.box').css('width', obj.boxSize + 'px');
+        $('.box').css('height', obj.boxSize + 'px');
+      }
+
+      function generateArtifacts(theme) {
+        theme = theme ? theme : current_theme;
+        var splash = $('#splash');
+        var boxes = $('.box').toArray();
+        boxes.forEach(function(box) {
+          $(box).html('');
+          var artifact = document.createElement('div');
+          $(artifact).addClass('artifact');
+          var className = variants[rand(0, variants.length)];
+          var color = theme.getColor();
+          $(artifact).addClass(className);
+          switch (className) {
+            case 'square':
+              $(artifact).css('background-color', color);
+              break;
+            case 'frame':
+              $(artifact).css('background-color', color);
+              $(artifact).css('align-items', 'center');
+              $(artifact).html('<div class="inner-frame"></div>');
+              break;
+          }
+          box.appendChild(artifact);
+        });
+      }
+
+      function rotateArtifact() {
+        var artifacts = $('#splash .box .frame').toArray();
+        var artifact = artifacts[rand(0, artifacts.length)];
+
+      }
+
+      function addArtifact(type) {
+        var artifacts = $('#splash .box .none').toArray();
+        var index = rand(0, artifacts.length);
+        var artifact = artifacts[index];
+        artifact.className = 'artifact';
+
+        var color = current_theme.getColor();
+        $(artifact).addClass(type);
+        switch (type) {
+          case 'square':
+            $(artifact).css('background-color', color);
+            break;
+          case 'frame':
+            $(artifact).css('background-color', color);
+            $(artifact).css('align-items', 'center');
+            $(artifact).html('<div class="inner-frame"></div>');
+            $(artifact.firstChild).css('display', 'none');
+            $(artifact.firstChild).fadeIn(800, 'swing');
+            break;
+        }
+        $(artifact).css('display', 'none');
+        $(artifact).fadeIn(800, 'swing');
+      }
+
+      function removeArtifact(type) {
+        var artifacts = $('#splash .box .' + type).toArray();
+        var artifact = artifacts[rand(0, artifacts.length)];
+        $(artifact).fadeOut(800, 'swing');
+        setTimeout(function() {
+          artifact.className = 'artifact';
+          $(artifact).css('background-color', 'white');
+          $(artifact).addClass('none');
+        }, 800);
+      }
+
+      function changeColor(type) {
+        var artifacts = $('#splash .box .' + type).toArray();
+        var artifact = artifacts[rand(0, artifacts.length)];
+        var color = current_theme.getColor();
+        $(artifact).css('background-color', color);
+      }
+
+      (function() {
+        makeBoxes(self);
+        generateArtifacts();
+        setInterval(function() {
+          generateArtifacts(getNewTheme());
+        }, 3000);
+        // setTimeout(function(){
+        //   setInterval(function(){
+        //     removeArtifact('square');
+        //     removeArtifact('square');
+        //     removeArtifact('frame');
+        //     removeArtifact('frame'); 
+        //   }, 1000);
+        // }, 500);
+        // setInterval(function(){
+        //   addArtifact('square');
+        //   addArtifact('square');
+        //   addArtifact('frame');
+        //   addArtifact('frame');
+        // }, 1000);
+        // setInterval(function(){
+        //   changeColor('frame');
+        //   changeColor('square');
+        // }, 500);
+
+      })();
+    }
+  }
+
+  class About extends Component {
+    constructor(data) {
+      super(data);
+    }
+    fill() {
+      var text = '';
+      var content = this.content;
+      text += '<section id="' + this.name + '">\r';
+      text += '<div>\r';
+      text += '<h2>' + content.name + '</h2>\r';
+      text += '<img class="img-fluid" src="' + content.image + '">\r';
+      text += '<h3>' + content.jobTitle + '</h3>\r';
+      text += '<p class="summary">' + content.summary + '</p>\r';
+
+      text += '<section class="skills">\r';
+      text += '<h3>Skills</h3>\r';
+      text += '<ul>\r';
+      content.skills.forEach(function(skill) {
+        text += '<li>' + skill + '</li>\r';
+      });
+      text += '</ul>\r';
+      text += '</section>\r';
+      text += '</div>\r';
+
+      text += '</section>\r';
+      return text;
+    }
+  }
+
+  class Websites extends Component {
+    constructor(data) {
+      super(data);
+    }
+    fill() {
+      var text = '';
+      text += '<section id="' + this.name + '">\r';
+      text += '<div>\r';
+      text += '<h2>' + this.content.title + '</h2>\r';
+      text += '<p>' + this.content.summary + '</p>\r';
+      text += '<div class="container-fluid gallery">\r';
+      this.gallery.forEach(function(item, index) {
+        text += '<div class="row gallery-item">\r';
+        text += '<div class="col-12 col-sm-6">\r';
+        text += '<h3>' + item.title + '</h3>\r';
+        text += '<p>' + item.desc + '</p>\r';
+        text += '</div>\r';
+        text += '<div class="col-12 col-sm-6">\r';
+        text += '<figure>\r';
+        text += '<a href="' + item.link + '" target="_blank">\r';
+        text += '<img class="img-fluid" src="' + item.image + '">\r';
+        text += '</a>\r';
+        text += '</figure>\r';
+        text += '</div>\r';
+        text += '</div>\r';
+      });
+      text += '</div>\r';
+      text += '</div>\r';
+      text += '</section>\r';
+      return text;
+    }
+  }
+
+  class Games extends Component {
+    constructor(data) {
+      super(data);
+    }
+    fill() {
+      var text = '';
+      text += '<section id="' + this.name + '">\r';
+      text += '<div>\r';
+      text += '<h2>' + this.content.title + '</h2>\r';
+      text += '<p>' + this.content.summary + '</p>\r';
+      text += '<div class="gallery">\r';
+      this.gallery.forEach(function(item, index) {
+        text += '<div class="gallery-item">\r';
+
+        text += '<div class="flip-card">\r';
+        text += '<div class="flip-card-inner">\r';
+
+        text += '<div class="flip-card-front">\r';
+        text += '<figure>\r';
+        text += '<img class="img-fluid" src="' + item.image + '">\r';
+        text += '</figure>\r';
+        text += '</div>\r';
+
+        text += '<div class="flip-card-back">\r';
+        text += '<h3>' + item.title + '</h3>\r';
+        text += '<p>' + item.desc + '</p>\r';
+        text += '<a href="' + item.link + '" target="_blank"><span class="launch">Launch</span></a>\r';
+        text += '<ul class="techs">\r';
+        item.techs.forEach(function(tech) {
+          text += '<li>' + tech + '</li>\r';
+        });
+        text += '</ul>\r';
+        text += '</div>\r';
+        text += '</div>\r';
+
+        text += '</div>\r';
+        text += '</div>\r';
+      });
+      text += '</div>\r';
+      text += '</div>\r';
+      text += '</section>\r';
+      return text;
+    }
+    performJavascriptFunctions() {
+      $('.flip-card-front').click(function() {
+        $(this).parent().css('transform', 'rotateY(180deg)');
+      });
+      $('.flip-card-back').click(function() {
+        console.log('clicked')
+        $(this).parent().css('transform', 'rotateY(0deg)');
+      });
+    }
+  }
+
+  class Artworks extends Component {
+    constructor(data) {
+      super(data);
+    }
+    fill() { 
+      var text = ''; 
+      text += '<section id="'+this.name+'">\r';
+      text += '<div>\r';
+      text += '<h2>'+this.content.title+'</h2>\r';
+      text += '<p>'+this.content.summary+'</p>\r';
+
+      text += '<div class="gallery">\r';
+      text += '<div id="demo" class="carousel slide" data-ride="carousel">\r';
+      text += '<ul class="carousel-indicators">\r';
+
+      this.gallery.forEach(function(item, index){
+        text += '<li data-target="#demo" data-slide-to="'+index+'"'+( index == 0 ? ' class="active"' : '') +'></li>\r';
+      });
+       
+      text += '</ul>\r';
+      text += '<div class="carousel-inner">\r';
+
+      this.gallery.forEach(function(item, index){
+        text += '<div class="carousel-item'+(index == 0 ? ' active' : '')+'">\r';
+        text += '<div class="item">\r';   
+        text += '<figure>\r';
+        text += '<h3>'+item.title+'</h3>\r';
+        text += item.link ? '<a href="'+item.link+'" target="_blank">\r' : '';
+        text += '<img class="img-fluid" src="'+item.image+'">\r';
+        text += item.link ? '</a>\r' : '';
+        text += '<figcaption>\r';  
+        text += '<p><b>Description: </b>'+item.desc+'</p>\r';
+        text += '<p><b>Medium: </b>'+item.medium+'</p>\r';
+        text += '</figcaption>\r';
+        text += '</figure>\r'; 
+        text += '</div>\r'; 
+        text += '</div>\r';
+      });
+
+      text += '<a class="carousel-control-prev" href="#demo" data-slide="prev">\r';
+      text += '<span class="carousel-control-prev-icon"></span>\r';
+      text += '</a>\r';
+      text += '<a class="carousel-control-next" href="#demo" data-slide="next">\r';
+      text += '<span class="carousel-control-next-icon"></span>\r';
+      text += '</a>\r';
+      text += '</div>\r';
+
+      text += '</div>\r';
+      text += '</div>\r';
+      text += '</div>\r';
+      text += '</section>\r';
+      return text;
+    } 
+    performJavascriptFunctions(){
+      var images = $('#artworks img').toArray();
+      var maxHeight = 500;
+      setTimeout(function(){
+        images.forEach(function(image){
+          var height = image.naturalHeight;
+          var width = image.naturalWidth; 
+          $(image).css('width', (width/height)*maxHeight+'px');
+        });
+      }, 150); 
+    }
+  }
+
+  class Contact extends Component{
+    constructor(data){
+      super(data);
+    }
+    fill(){
+      var text = '';
+      text += '<section id="'+this.name+'">\r';
+      text += '<div>\r';
+      text += '<h2>'+this.content.title+'</h2>\r';
+      text += '<p><a href="mailto:'+this.content.email+'?" target="_top"> '+this.content.email+'</a> | '+this.content.phone+'</p>\r';
+      text += '</div>\r';
+      text += '</section>\r';
+      return text;
+    }
+  }
+  
+  (function(){
+    getData('/json/data.json', BuildApp); 
+  })();
+  </script>
+</body>
+
 </html>

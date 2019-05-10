@@ -1,0 +1,218 @@
+{
+	"name": "app",
+	"content": {},
+	"gallery": 
+	[
+		{
+			"name": "splash",
+			"content": {"title": "Splash"},
+			"gallery": [],
+			"display": false
+		},
+		{
+			"name": "about",
+			"content": 
+			{
+				"title": "About",
+				"name": "Jason Yim",
+				"jobTitle": "Frontend Web Developer",
+				"summary": "I like to use my creativity and mastery of programming to create awesome things.",
+				"image": "/images/about/me.jpg",
+				"skills": 
+				[
+					"Java", 
+					"C#", 
+					"Ruby", 
+					"Ruby on Rails", 
+					"XML", 
+					"HTML5", 
+					"CSS3", 
+					"Javascript",
+					"ES6",
+					"Babel",
+					"Shell script",
+					"terminal", 
+					"Python", 
+					"Applescript", 
+					"jQuery", 
+					"Bootstrap",  
+					"AngularJS", 
+					"Firebase", 
+					"SASS", 
+					"Git", 
+					"Heroku", 
+					"Amazon Web Services", 
+					"Adobe Creative Suite"
+				]
+			},
+			"gallery": [],
+			"display": true
+		},
+		{
+			"name": "websites",
+			"content": 
+			{
+				"title": "Websites",
+				"summary": "Some of the Websites I've worked on and maintained."
+			},
+			"gallery": 
+			[
+				{					
+					"title": "Hangry Wok",
+					"desc": "Come hangry, leave happy!",
+					"image": "/images/websites/hangrywok.png",
+					"link": "https://hangrywok663044568.wordpress.com/home/",
+					"techs": ["WordPress"]
+				},
+				{
+					"title": "BEC Champions",
+					"desc": "Soccer League website. I helped with routing the data and made it mobile friendly.",
+					"image": "/images/websites/becchamps.png",
+					"link": "https://www.becchampions.com/",
+					"techs": ["VanillaJS", "AJAX"]
+				},
+				{
+					"title": "Port Canvas", 	
+					"desc": "A drawing app that connects multiple users to the same canvas.",					
+					"image": "/images/websites/port_canvas.png",	 
+					"link": "https://portcanvas.herokuapp.com/",
+					"techs": ["Heroku", "Raphael", "Ruby on Rails"]
+				}
+			],
+			"display": false
+		},
+		{
+			"name": "games",
+			"content": 
+			{
+				"title": "Games",
+				"summary": "I like to explore aspects of game mechanics, how it works and I've learned a lot in the process of making these."
+			},
+			"gallery": 
+			[
+				{
+					"name": "darts", 				
+					"link": "https://yimjason.github.io/darts/",						   
+					"image": "/images/games/darts.png",
+					"title": "Darts",
+					"desc": "Made a dart board for the browser.",
+					"techs": ["VanillaJS"]
+				},
+				{
+					"name": "asteroids", 				
+					"link": "https://yimjason.github.io/asteroids/",						   
+					"image": "/images/games/asteroids.png",
+					"title": "Asteroids",
+					"desc": "My version of Asteroids for the browser.",
+					"techs": ["VanillaJS"]
+				},
+				{
+					"name": "freecell", 				
+					"link": "https://yimjason.github.io/freecell/",						   
+					"image": "/images/games/freecell.png",
+					"title": "Freecell",
+					"desc": "Freecell for the browser.",
+					"techs": ["VanillaJS"]
+				},
+				{
+					"name": "mine_sweeper", 				
+					"link": "https://yimjason.github.io/mine_sweeper/",						   
+					"image": "/images/games/mine_sweeper.png",
+					"title": "Mine Sweeper",
+					"desc": "Mine sweeper for the browser.",
+					"techs": ["VanillaJS"]
+				},
+				{
+					"name": "connect_four", 				
+					"link": "https://yimjason.github.io/connect_four/",						   
+					"image": "/images/games/connect_four.png",
+					"title": "Connect Four",
+					"desc": "Connect four for the browser.",
+					"techs": ["VanillaJS"]
+				},
+				{
+					"name": "tetra_taps", 				
+					"link": "https://yimjason.github.io/tetra_taps/",						   
+					"image": "/images/games/tetra_taps.png",
+					"title": "Tetra Taps",
+					"desc": "Its a simon game.",
+					"techs": ["VanillaJS","AngularJS","Firebase"]
+				}
+			],
+			"display": true
+		},
+		{
+			"name": "artworks",
+			"content": 
+			{
+				"title": "Artworks",
+				"summary": "Here are some of the paintings I've made during my study at Stony Brook University"
+			},
+			"gallery": 
+			[
+				{
+					"title": "Courbet",
+					"desc": "A reproduction, painted on a brick in the halls of the Staller Arts Center.",
+					"medium": "oil on brick",
+					"image": "/images/artworks/courbet.jpg",
+					"link": "https://www.wikiart.org/en/gustave-courbet/self-portrait-the-man-with-a-pipe-1849"
+				}, 
+				{
+					"title": "Lake Champlain",
+					"desc": "A self-portrait",
+					"medium": "color pencil on paper",
+					"image": "/images/artworks/lake_champlain.jpg",
+					"link": false
+				},
+				{
+					"title": "Hammock Girl",
+					"desc": "",
+					"medium": "oil on canvas",
+					"image": "/images/artworks/hammock_girl.jpg",
+					"link": false
+				},
+				{
+					"title": "Starry Night",
+					"desc": "",
+					"medium": "color pencil on paper",
+					"image": "/images/artworks/starry_night.jpg",
+					"link": false
+				},
+				{
+					"title": "Sunset Lamp",
+					"desc": "This was originally a picture I took. I was fascinated by the surreal colors of the sunset and the contrasting shadows, and this glow from the lamp post. It conveyed this idea, that even when the sun has set, there is still light. In other words, in times of great despair, hope is at it's brightest.",
+					"medium": "oil on canvas",
+					"image": "/images/artworks/sunset_lamp.jpg",
+					"link": false
+				},
+				{
+					"title": "Titian",
+					"desc": "A partial reproduction from Titian's <i>Sacred and Profane Love</i>",
+					"medium": "oil on canvas",
+					"image": "/images/artworks/titian.jpg",
+					"link": "https://en.wikipedia.org/wiki/Sacred_and_Profane_Love"
+				},
+				{
+					"title": "Venus",
+					"desc": "Another reproduction, painted on a brick in the halls of the Staller Arts Center.",
+					"medium": "oil on brick",
+					"image": "/images/artworks/venus.jpg",
+					"link": "https://en.wikipedia.org/wiki/The_Birth_of_Venus_(Cabanel)"
+				}
+			],
+			"display": true
+		},
+		{
+			"name": "contact",
+			"content": 
+			{
+				"title": "Contact",
+				"summary": "",
+				"email": "yimjason00@gmail.com",
+				"phone": "917-520-2240"
+			},
+			"gallery": [],
+			"display": true
+		}
+	]
+}
