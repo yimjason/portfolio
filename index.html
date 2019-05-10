@@ -163,7 +163,7 @@
 
   #artworks .gallery {
     margin: 2rem 0 2rem 0;
-    min-height: 800px;
+    min-height: 860px;
   } 
   #artworks .gallery .item {
     margin: 0 auto;
@@ -171,7 +171,7 @@
   } 
   #artworks .gallery .item img{
     margin-bottom: 1rem;
-  }
+  } 
   #artworks .gallery .item p {
     text-align: left;
   }
@@ -720,7 +720,7 @@
       text += '<p>'+this.content.summary+'</p>\r';
 
       text += '<div class="gallery">\r';
-      text += '<div id="demo" class="carousel slide" data-ride="carousel">\r';
+      text += '<div id="demo" class="carousel slide" data-ride="carousel" data-interval="8000">\r';
       text += '<ul class="carousel-indicators">\r';
 
       this.gallery.forEach(function(item, index){
@@ -765,10 +765,14 @@
       var images = $('#artworks img').toArray();
       var maxHeight = 500;
       setTimeout(function(){
-        images.forEach(function(image){
+        images.forEach(function(image){ 
           var height = image.naturalHeight;
-          var width = image.naturalWidth; 
-          $(image).css('width', (width/height)*maxHeight+'px');
+          var width = image.naturalWidth;
+          if(height > width){
+            console.log(height);
+            var finalWidth = (width/height)*maxHeight+'px'; 
+            $(image).css('width', finalWidth);
+          } 
         });
       }, 150); 
     }
