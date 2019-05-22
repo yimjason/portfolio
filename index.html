@@ -155,16 +155,29 @@
     color: white; 
   }
 
+  #work a[data-toggle=modal]{
+    padding: 6px 8px 6px 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  #work a[data-toggle=modal]:hover{
+    background-color: #333;
+    color: white;
+    border-color: #333; 
+  }
+
   ul, li{
     margin: 0;
     padding: 0; 
   }
   ul{
     padding: 10px;
-  }
-  #work hr{
-    border-color: #333;
-  }
+  } 
 
   #websites {
     padding: 2rem;
@@ -630,7 +643,7 @@
             text += '<section>\r';
             text += '<div class="row">\r';
             text += '<div class="col-12">\r';
-            text += '<h4>'+project.title+'</h4>\r';
+            text += '<h4>'+project.title+'<a href="#" data-toggle="modal" data-target="#'+modal_id+'">View</a></h4>\r'; 
             text += project.summary;
             text += '</div>\r';
             text += '<div class="col-12 col-sm-4 col-md-3">\r';
@@ -644,6 +657,7 @@
               text += '<li>'+bullet+'</li>\r';
             });
             text += '</ul>\r';
+            
             text += '</div>\r';
             text += '</div>\r';
             text += '</section>\r';
@@ -820,7 +834,7 @@
             $(image).css('width', finalWidth);
           } 
         });
-      }, 150); 
+      }, 300); 
     }
   }
 
