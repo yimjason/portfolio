@@ -15,8 +15,8 @@
 			{
 				"title": "About",
 				"name": "Jason Yim",
-				"jobTitle": "Frontend Web Developer",
-				"summary": "I like to use my creativity and mastery of programming to create awesome things.",
+				"jobTitle": "Web Developer",
+				"summary": "Hi, I am currently looking for work. I am based in <br>New York City and I don't mind traveling far. I like to use my creativity and mastery of programming to create awesome things.",
 				"image": "images/about/me.jpg",
 				"skills": 
 				[
@@ -46,6 +46,306 @@
 				]
 			},
 			"gallery": [],
+			"display": true
+		},
+		{
+			"name": "work",
+			"content":
+			{
+				"title": "Work",
+				"summary": ""
+			},
+			"gallery": 
+			[
+				{
+					"name": "bec",
+					"abr": "BEC",
+					"company": "Benchmark Education Company",
+					"start_date": "May 2016",
+					"end_date": "April 2019",
+					"image": "images/work/bec/logo.png",
+					"bullets":
+					[
+						"Worked with a small digital team to transform print products into digital formats.", 
+						"Created software to automate workflow using InDesign ExtendScript.",
+						"Created templates and prototypes from wireframes and work closely with editorial and design to perfect the user interface and experience.",
+						"Some of the technologies used: Javascript, VanillaJS, Applescript, python, XML, HTML, CSS, jQuery, Bootstrap 3 and 4, Foundation, JSON, AJAX, Adobe InDesign (also woodwing), Illustrator, Photoshop, etc."
+					],
+					"projects": 
+					[
+						{
+							"name": "sstk",
+							"title": "Sound-Spelling Transfer Kit",
+							"summary": "",
+							"bullets": 
+							[
+								"Helped the design team make the template responsive.",
+								"Added frontend functionalities to the templates: flip cards, vertical navigation, and videos.",
+								"Used Javascript to automate the creation of over 100 products for this program."																
+							],
+							"image": "images/work/bec/projects/sstk/sstk_th.png",
+							"gallery": 
+							[
+								{ 
+									"image": "images/work/bec/projects/sstk/0.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/sstk/1.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/sstk/2.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/sstk/3.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/sstk/4.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/sstk/5.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/sstk/6.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/sstk/7.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/sstk/8.jpg",
+									"caption": ""
+								}
+							]
+						},
+						{
+							"name": "rta",
+							"title": "Ready to Advance Early Learning",
+							"summary": "",
+							"bullets": 
+							[
+								"Designed and created the template.",
+								"Used Javascript to automate the creation of all the products in this iTRS.",
+								"Automated the navigation to link between all the pages within the product."
+							],
+							"image": "images/work/bec/projects/rta/rta_th.png",
+							"gallery": 
+							[
+								{
+									"image": "images/work/bec/projects/rta/0.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/1.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/2.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/3.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/4.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/5.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/6.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/7.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/8.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/9.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/10.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/rta/11.jpg",
+									"caption": ""
+								}
+							]
+						},
+						{
+							"name": "brw",
+							"title": "Benchmark Readers Workshop",
+							"summary": "",
+							"bullets": 
+							[
+								"Designed all the templates and frontend functionalities.",
+								"Used Javascript to automate the creation of all the products for this iTRS.",
+								"Redesigned the navigation and automated it to link between all the pages within the product."
+							],
+							"image": "images/work/bec/projects/brw/brw_th.png",
+							"gallery": 
+							[
+								{
+									"image": "images/work/bec/projects/brw/0.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/1.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/2.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/3.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/4.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/5.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/6.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/7.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/8.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/9.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/10.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/brw/11.jpg",
+									"caption": ""
+								}
+							]
+						},
+						{
+							"name": "fonetica",
+							"title": "Fon&eacute;tica y gram&aacute;tica",
+							"summary": "",
+							"bullets": 
+							[
+								"Designed all the templates and frontend functionalities.",
+								"Used Javascript to automate the creation of all the products for this iTRS.",
+								"Completed this project under an aggressive deadline."
+							],
+							"image": "images/work/bec/projects/fonetica/fonetica_th.png",
+							"gallery": 
+							[
+								{ 
+									"image": "images/work/bec/projects/fonetica/0.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/fonetica/1.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/fonetica/2.jpg",
+									"caption": ""
+								},
+								{ 
+									"image": "images/work/bec/projects/fonetica/3.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/fonetica/4.jpg",
+									"caption": ""
+								}
+							]
+						},
+						{
+							"name": "eld",
+							"title": "English Language Development",
+							"summary": "",
+							"bullets": 
+							[
+								"Designed and created the prototype and templates.",
+								"Used Javascript to automate the creation of all the lessons and packages."
+							],
+							"image": "images/work/bec/projects/eld/eld_th.png",
+							"gallery": 
+							[
+								{
+									"image": "images/work/bec/projects/eld/0.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/eld/1.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/eld/2.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/eld/3.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/eld/4.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/eld/5.jpg",
+									"caption": ""
+								},
+								{
+									"image": "images/work/bec/projects/eld/6.jpg",
+									"caption": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "ntt",
+					"abr": "NTT",
+					"company": "NTT Data",
+					"start_date": "September 2015",
+					"end_date": "May 2016",
+					"image": "images/work/ntt/logo.png",
+					"bullets":
+					[
+						"Second assignment with NTT.",
+						"Worked at Canon’s Datacenter of Operations.",
+						"Used many software programs to monitor hardware, network, and application activities.",
+						"Daily tasks includes but not limited to: data storage and backup, mainframe maintenance, archiving and organizing data, and helping employees with hardware or software issues."
+					],
+					"projects": []
+				}	
+			],
 			"display": true
 		},
 		{

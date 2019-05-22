@@ -36,7 +36,7 @@
 
   #about {
     text-align: center;
-    padding: 1rem;
+    padding: 6rem 1rem 8rem 1rem;
     background-color: whitesmoke;
   }
 
@@ -67,6 +67,100 @@
     background-color: white;
   }
 
+  #work {
+    padding: 5rem 1rem 8rem 1rem;
+  } 
+
+  #work h2{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  #work .company {
+    margin-bottom: 5rem; 
+  }
+
+  #work .company .logo{
+    padding: 2px;
+    border: 1px solid #ccc;
+    vertical-align: bottom;
+  }
+
+  #work .company ul{
+    margin-left: 1rem;
+  }
+
+  #work figure.thumbnail{
+    max-width: 150px;  
+    margin: 0 auto;
+  }
+
+  #work figure.thumbnail img{
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+    cursor: pointer;
+  }
+
+  #work figure.thumbnail img:hover{
+    opacity: 0.8; 
+  }
+
+  #work .modal-body {    
+    padding: 0; 
+  }
+
+  #work .modal-body figure{    
+    margin: 0; 
+  }
+
+  #work .carousel-control-prev,
+  #work .carousel-control-next{
+    opacity: 0;
+  }
+
+  #work .carousel-control-prev:hover,
+  #work .carousel-control-next:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.1;
+  } 
+ 
+  #work .nav.nav-pills .nav-link.active{
+    background-color: #333;
+    border-radius: 0; 
+  }
+
+  #work .nav.nav-pills .nav-link.active:hover{
+    background-color: #333;
+    outline: 0; 
+    border-radius: 0; 
+  }
+
+  #work .nav.nav-pills .nav-link:hover{
+    background-color: white;
+    outline: 1px solid #333; 
+    border-radius: 0; 
+  }
+
+  #work a{
+    color: black; 
+  }
+
+  #work a.active{
+    color: white; 
+  }
+
+  ul, li{
+    margin: 0;
+    padding: 0; 
+  }
+  ul{
+    padding: 10px;
+  }
+  #work hr{
+    border-color: #333;
+  }
+
   #websites {
     padding: 2rem;
   }
@@ -81,7 +175,7 @@
 
   #games {
     text-align: center;
-    padding: 1rem;
+    padding: 5rem 1rem 5rem 1rem;
     background-color: #333;
     color: whitesmoke;
   }
@@ -159,7 +253,7 @@
 
   #artworks {
     text-align: center;
-    padding: 1rem;
+    padding: 5rem 1rem 5rem 1rem;
     background-color: #222;
     color: whitesmoke;
   }
@@ -189,7 +283,7 @@
     background-color: whitesmoke;
     height: 100%;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 5rem 1rem 5rem 1rem;
     min-height: 180px;
     margin: 0 auto;
   }
@@ -333,6 +427,9 @@
           case 'about':
             self.about = component = new About(item);
             break;
+          case 'work':
+            self.work = component = new Work(item);
+            break;  
           case 'websites':
             self.websites = component = new Websites(item);
             break;
@@ -372,229 +469,7 @@
       return text;
     }
   }
-
-  class Splash extends Component {
-    constructor(data) {
-      super(data);
-      this.maxWidth = 2400;
-      this.maxHeight = 1200;
-      this.boxSize = 100;
-    }
-    fill() {
-      var text = '';
-      text += '<section class="row" id="splash">\r';
-      text += '</section>\r';
-      return text;
-    }
-    performJavascriptFunctions() {
-      function rand(min, max) {
-        return Math.floor(Math.random() * (max - min) - min);
-      }
-      class Theme {
-        constructor(name, colors) {
-          this.name = name;
-          this.colors = colors;
-        }
-        getColor() {
-          return this.colors[rand(0, this.colors.length)];
-        }
-      }
-      var variants = [
-        'square',
-        'square',
-        'square',
-        'square',
-        'none',
-        'none',
-        'frame',
-        'frame',
-        'frame',
-        'none',
-      ];
-      var self = this;
-      var current_theme = getNewTheme();
-
-      function getNewTheme() {
-        var themes = [
-          new Theme('red',
-            [
-              '#cc0000', //red
-              '#ff6600', //orange 
-              '#800000', //brick-red
-              '#b32d00', //sienna
-              '#009900', //green
-              '#ff5050', //sunset-red
-            ]),
-          new Theme('blue',
-            [
-              '#0066ff', //blue
-              '#4dffff', //cyan
-              '#00ccff', //turquois
-              '#3366ff', //summer-blue
-              '#ccccff', //lavender
-              '#0000cc', //indigo  
-            ]),
-          new Theme('green',
-            [
-              '#009900', //green  
-              '#006600', //dark-green 
-              '#ffcc66', //sand
-              '#b32d00', //sienna
-              '#ffff00', //yellow
-            ]),
-          new Theme('purple',
-            [
-              '#ccccff', //lavender 
-              '#3366ff', //summer-blue 
-              '#6600ff', //purple
-              '#ff5050', //sunset-red
-              '#ffccff', //pink 
-              '#cc0000', //red
-            ]),
-          new Theme('yellow',
-            [
-              '#ff6600', //orange
-              '#ffff00', //yellow
-              '#ffcc66', //sand
-              '#ff5050', //sunset-red 
-            ]),
-          new Theme('rainbow',
-            [
-              '#cc0000', //red
-              '#ff6600', //orange
-              '#ffff00', //yellow
-              '#009900', //green  
-              '#006600', //dark-green 
-              '#ffccff', //pink 
-              '#ff5050', //sunset-red
-              '#800000', //brick-red
-              '#b32d00', //sienna 
-              '#ffcc66', //sand
-              '#6600ff', //purple
-              '#0066ff', //blue
-              '#4dffff', //cyan
-              '#00ccff', //turquois
-              '#3366ff', //summer-blue
-              '#ccccff', //lavender  
-              '#0000cc', //indigo 
-            ]),
-        ];
-        return themes[rand(0, themes.length)];
-      }
-
-      function makeBoxes(obj) {
-        var number_of_boxes = (obj.maxHeight * obj.maxWidth) / (obj.boxSize * obj.boxSize);
-        number_of_boxes.forEvery(function(number) {
-          $('#splash').append('<div class="box"></div>');
-        });
-        $('#splash').css('max-width', obj.maxWidth + 'px');
-        $('#splash').css('max-height', obj.maxHeight + 'px');
-        $('.box').css('width', obj.boxSize + 'px');
-        $('.box').css('height', obj.boxSize + 'px');
-      }
-
-      function generateArtifacts(theme) {
-        theme = theme ? theme : current_theme;
-        var splash = $('#splash');
-        var boxes = $('.box').toArray();
-        boxes.forEach(function(box) {
-          $(box).html('');
-          var artifact = document.createElement('div');
-          $(artifact).addClass('artifact');
-          var className = variants[rand(0, variants.length)];
-          var color = theme.getColor();
-          $(artifact).addClass(className);
-          switch (className) {
-            case 'square':
-              $(artifact).css('background-color', color);
-              break;
-            case 'frame':
-              $(artifact).css('background-color', color);
-              $(artifact).css('align-items', 'center');
-              $(artifact).html('<div class="inner-frame"></div>');
-              break;
-          }
-          box.appendChild(artifact);
-        });
-      }
-
-      function rotateArtifact() {
-        var artifacts = $('#splash .box .frame').toArray();
-        var artifact = artifacts[rand(0, artifacts.length)];
-
-      }
-
-      function addArtifact(type) {
-        var artifacts = $('#splash .box .none').toArray();
-        var index = rand(0, artifacts.length);
-        var artifact = artifacts[index];
-        artifact.className = 'artifact';
-
-        var color = current_theme.getColor();
-        $(artifact).addClass(type);
-        switch (type) {
-          case 'square':
-            $(artifact).css('background-color', color);
-            break;
-          case 'frame':
-            $(artifact).css('background-color', color);
-            $(artifact).css('align-items', 'center');
-            $(artifact).html('<div class="inner-frame"></div>');
-            $(artifact.firstChild).css('display', 'none');
-            $(artifact.firstChild).fadeIn(800, 'swing');
-            break;
-        }
-        $(artifact).css('display', 'none');
-        $(artifact).fadeIn(800, 'swing');
-      }
-
-      function removeArtifact(type) {
-        var artifacts = $('#splash .box .' + type).toArray();
-        var artifact = artifacts[rand(0, artifacts.length)];
-        $(artifact).fadeOut(800, 'swing');
-        setTimeout(function() {
-          artifact.className = 'artifact';
-          $(artifact).css('background-color', 'white');
-          $(artifact).addClass('none');
-        }, 800);
-      }
-
-      function changeColor(type) {
-        var artifacts = $('#splash .box .' + type).toArray();
-        var artifact = artifacts[rand(0, artifacts.length)];
-        var color = current_theme.getColor();
-        $(artifact).css('background-color', color);
-      }
-
-      (function() {
-        makeBoxes(self);
-        generateArtifacts();
-        setInterval(function() {
-          generateArtifacts(getNewTheme());
-        }, 3000);
-        // setTimeout(function(){
-        //   setInterval(function(){
-        //     removeArtifact('square');
-        //     removeArtifact('square');
-        //     removeArtifact('frame');
-        //     removeArtifact('frame'); 
-        //   }, 1000);
-        // }, 500);
-        // setInterval(function(){
-        //   addArtifact('square');
-        //   addArtifact('square');
-        //   addArtifact('frame');
-        //   addArtifact('frame');
-        // }, 1000);
-        // setInterval(function(){
-        //   changeColor('frame');
-        //   changeColor('square');
-        // }, 500);
-
-      })();
-    }
-  }
-
+ 
   class About extends Component {
     constructor(data) {
       super(data);
@@ -610,7 +485,7 @@
       text += '<p class="summary">' + content.summary + '</p>\r';
 
       text += '<section class="skills">\r';
-      text += '<h3>Skills</h3>\r';
+      text += '<h3>Skills and Knowledge</h3>\r';
       text += '<ul>\r';
       content.skills.forEach(function(skill) {
         text += '<li>' + skill + '</li>\r';
@@ -619,6 +494,168 @@
       text += '</section>\r';
       text += '</div>\r';
 
+      text += '</section>\r';
+      return text;
+    }
+  }
+
+  class Carousel extends Component {
+    constructor(data, id) {
+      super(data);
+      this.id = id;
+      this.html = this.fill();
+    }
+    fill() {
+      var text = '';
+      var self = this;
+      text += '<div id="'+this.id+'" class="carousel slide" data-ride="carousel" data-interval="5000">\r';
+      // text += '<ul class="carousel-indicators">\r';
+
+      // this.gallery.forEach(function(item, index){
+      //   text += '<li data-target="#'+self.id+'" data-slide-to="'+index+'"'+( index == 0 ? ' class="active"' : '') +'></li>\r';
+      // });
+       
+      // text += '</ul>\r';
+      text += '<div class="carousel-inner">\r';
+
+      this.gallery.forEach(function(item, index){
+        text += '<div class="carousel-item'+(index == 0 ? ' active' : '')+'">\r';
+        text += '<div class="item">\r';   
+        text += '<figure>\r'; 
+        text += item.link ? '<a href="'+item.link+'" target="_blank">\r' : '';
+        text += '<img class="img-fluid" src="'+item.image+'">\r';
+        text += item.link ? '</a>\r' : '';
+        text += '<figcaption>'+item.caption+'</figcaption>\r';
+        text += '</figure>\r'; 
+        text += '</div>\r'; 
+        text += '</div>\r';
+      });
+
+      text += '<a class="carousel-control-prev" href="#'+this.id+'" data-slide="prev">\r';
+      text += '<span class="carousel-control-prev-icon"></span>\r';
+      text += '</a>\r';
+      text += '<a class="carousel-control-next" href="#'+this.id+'" data-slide="next">\r';
+      text += '<span class="carousel-control-next-icon"></span>\r';
+      text += '</a>\r';
+      text += '</div>\r';
+      text += '</div>\r';
+      return text;
+    }
+  }
+
+  class Modal extends Component {
+    constructor(data, id) {
+      super(data); 
+      this.id = id;
+      this.html = this.fill();
+    }
+    fill() { 
+      var text = '';
+      text += '<div class="modal fade" id="'+this.id+'">\r';
+      text += '<div class="modal-dialog modal-lg">\r';
+      text += '<div class="modal-content">\r';
+      text += '<div class="modal-header">\r';
+      text += '<h4 class="modal-title">'+this.data.title+'</h4>\r';
+      text += '<button type="button" class="close" data-dismiss="modal">&times;</button>\r';
+      text += '</div>\r';
+      text += '<div class="modal-body">\r';
+      var carousel_id = this.id+'_carousel';
+      var carousel = new Carousel(this.data, carousel_id);
+      text += carousel.html;
+      text += '</div>\r';
+      text += '<div class="modal-footer">\r';
+      text += '<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>\r';
+      text += '</div>\r';
+      text += '</div>\r';
+      text += '</div>\r';
+      text += '</div>\r';
+      return text;
+    }
+  }
+
+  
+
+  class Work extends Component {
+    constructor(data) {
+      super(data);
+    }
+    fill() {
+      var text = '';
+      var self = this;
+      text += '<section id="' + this.name + '">\r';
+      text += '<div>\r';
+      text += '<h2>' + this.content.title + '</h2>\r';
+      text += '<p>' + this.content.summary + '</p>\r';
+      text += '<div class="container-fluid gallery">\r';
+      this.gallery.forEach(function(item, index) {
+        text += '<section class="company">\r';
+        text += '<h3>\r';
+        text += '<img class="logo" src="'+item.image+'" width="80" height="80">\r';
+        text += item.company; 
+        text += '</h3>\r'; 
+        text += '<p>'+item.start_date+' - '+item.end_date+'</p>\r';
+
+        text += '<ul>\r';
+        item.bullets.forEach(function(bullet){
+          text += '<li>'+bullet+'</li>\r';
+        });
+        text += '</ul>\r';
+
+        if(item.projects.length > 0){
+          text += '<h3>Projects</h3>\r';
+          text += '<hr>\r'; 
+        }
+
+        text += '<div class="row">\r';
+        text += '<div class="col-2">\r';
+        text += '<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">\r';
+        
+        item.projects.forEach(function(project, p_index){
+          text += '<a class="nav-link '+(p_index == 0 ? ' active' : '')+'" id="v-pills-tab'+p_index+'" data-toggle="pill" href="#v-pills-'+p_index+'" role="tab" aria-controls="v-pills-'+p_index+'" aria-selected="true">'+(p_index+1)+'</a>\r';
+
+        });
+
+        text += '</div>\r';
+        text += '</div>\r';
+        text += '<div class="col-10">\r';
+        text += '<div class="tab-content" id="v-pills-tabContent">\r';
+        
+        item.projects.forEach(function(project, p_index){
+          var modal_id = self.name+'_'+item.name+'_'+project.name;
+          text += '<div class="tab-pane fade'+(p_index == 0 ? ' show active' : '')+'" id="v-pills-'+p_index+'" role="tabpanel" aria-labelledby="v-pills-tab'+p_index+'">\r';
+          text += '<section>\r';
+          text += '<div class="row">\r';
+          text += '<div class="col-12">\r';
+          text += '<h4>'+project.title+'</h4>\r';
+          text += project.summary;
+          text += '</div>\r';
+          text += '<div class="col-12 col-sm-4 col-md-3">\r';
+          text += '<figure class="thumbnail">\r';
+          text += '<img class="img-fluid" src="'+project.image+'" data-toggle="modal" data-target="#'+modal_id+'">\r';
+          text += '</figure>\r';
+          text += '</div>\r';
+          text += '<div class="col-12 col-sm-8 col-md-9">\r';
+          text += '<ul>\r';
+          project.bullets.forEach(function(bullet){
+            text += '<li>'+bullet+'</li>\r';
+          });
+          text += '</ul>\r';
+          text += '</div>\r';
+          text += '</div>\r';
+          text += '</section>\r';
+          var modal = new Modal(project, modal_id);
+          text += modal.html;
+          text += '</div>\r';
+        });
+        
+        text += '</div>\r';
+        text += '</div>\r';
+        text += '</div>\r';
+        
+        text += '</section>\r';
+      });
+      text += '</div>\r';
+      text += '</div>\r';
       text += '</section>\r';
       return text;
     }
@@ -717,17 +754,18 @@
     }
     fill() { 
       var text = ''; 
+      var carousel_id = this.name+'_carousel';
       text += '<section id="'+this.name+'">\r';
       text += '<div>\r';
       text += '<h2>'+this.content.title+'</h2>\r';
       text += '<p>'+this.content.summary+'</p>\r';
 
       text += '<div class="gallery">\r';
-      text += '<div id="demo" class="carousel slide" data-ride="carousel" data-interval="8000">\r';
+      text += '<div id="'+carousel_id+'" class="carousel slide" data-ride="carousel" data-interval="8000">\r';
       text += '<ul class="carousel-indicators">\r';
 
       this.gallery.forEach(function(item, index){
-        text += '<li data-target="#demo" data-slide-to="'+index+'"'+( index == 0 ? ' class="active"' : '') +'></li>\r';
+        text += '<li data-target="#'+carousel_id+'" data-slide-to="'+index+'"'+( index == 0 ? ' class="active"' : '') +'></li>\r';
       });
        
       text += '</ul>\r';
@@ -750,10 +788,10 @@
         text += '</div>\r';
       });
 
-      text += '<a class="carousel-control-prev" href="#demo" data-slide="prev">\r';
+      text += '<a class="carousel-control-prev" href="#'+carousel_id+'" data-slide="prev">\r';
       text += '<span class="carousel-control-prev-icon"></span>\r';
       text += '</a>\r';
-      text += '<a class="carousel-control-next" href="#demo" data-slide="next">\r';
+      text += '<a class="carousel-control-next" href="#'+carousel_id+'" data-slide="next">\r';
       text += '<span class="carousel-control-next-icon"></span>\r';
       text += '</a>\r';
       text += '</div>\r';
