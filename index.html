@@ -749,7 +749,6 @@
         $(this).parent().css('transform', 'rotateY(180deg)');
       });
       $('.flip-card-back').click(function() {
-        console.log('clicked')
         $(this).parent().css('transform', 'rotateY(0deg)');
       });
     }
@@ -816,8 +815,7 @@
         images.forEach(function(image){ 
           var height = image.naturalHeight;
           var width = image.naturalWidth;
-          if(height > width){
-            console.log(height);
+          if(height > width){ 
             var finalWidth = (width/height)*maxHeight+'px'; 
             $(image).css('width', finalWidth);
           } 
