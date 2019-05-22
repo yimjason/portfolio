@@ -90,6 +90,11 @@
     margin-left: 1rem;
   }
 
+  #work .work_projects{ 
+    background-color: whitesmoke;
+    padding: 1rem;
+  }
+
   #work figure.thumbnail{
     max-width: 150px;  
     margin: 0 auto;
@@ -101,8 +106,8 @@
     cursor: pointer;
   }
 
-  #work figure.thumbnail img:hover{
-    opacity: 0.8; 
+  #work figure.thumbnail img:hover{ 
+    /*opacity: 0.9;*/ 
   }
 
   #work .modal-body {    
@@ -602,56 +607,58 @@
         text += '</ul>\r';
 
         if(item.projects.length > 0){
-          text += '<h3>Projects</h3>\r';
-          text += '<hr>\r'; 
-        }
+          text += '<section class="work_projects">\r';
+          text += '<h3>Projects</h3>\r'; 
 
-        text += '<div class="row">\r';
-        text += '<div class="col-2">\r';
-        text += '<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">\r';
-        
-        item.projects.forEach(function(project, p_index){
-          text += '<a class="nav-link '+(p_index == 0 ? ' active' : '')+'" id="v-pills-tab'+p_index+'" data-toggle="pill" href="#v-pills-'+p_index+'" role="tab" aria-controls="v-pills-'+p_index+'" aria-selected="true">'+(p_index+1)+'</a>\r';
-
-        });
-
-        text += '</div>\r';
-        text += '</div>\r';
-        text += '<div class="col-10">\r';
-        text += '<div class="tab-content" id="v-pills-tabContent">\r';
-        
-        item.projects.forEach(function(project, p_index){
-          var modal_id = self.name+'_'+item.name+'_'+project.name;
-          text += '<div class="tab-pane fade'+(p_index == 0 ? ' show active' : '')+'" id="v-pills-'+p_index+'" role="tabpanel" aria-labelledby="v-pills-tab'+p_index+'">\r';
-          text += '<section>\r';
           text += '<div class="row">\r';
-          text += '<div class="col-12">\r';
-          text += '<h4>'+project.title+'</h4>\r';
-          text += project.summary;
-          text += '</div>\r';
-          text += '<div class="col-12 col-sm-4 col-md-3">\r';
-          text += '<figure class="thumbnail">\r';
-          text += '<img class="img-fluid" src="'+project.image+'" data-toggle="modal" data-target="#'+modal_id+'">\r';
-          text += '</figure>\r';
-          text += '</div>\r';
-          text += '<div class="col-12 col-sm-8 col-md-9">\r';
-          text += '<ul>\r';
-          project.bullets.forEach(function(bullet){
-            text += '<li>'+bullet+'</li>\r';
+          text += '<div class="col-2">\r';
+          text += '<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">\r';
+          
+          item.projects.forEach(function(project, p_index){
+            text += '<a class="nav-link '+(p_index == 0 ? ' active' : '')+'" id="v-pills-tab'+p_index+'" data-toggle="pill" href="#v-pills-'+p_index+'" role="tab" aria-controls="v-pills-'+p_index+'" aria-selected="true">'+(p_index+1)+'</a>\r';
+
           });
-          text += '</ul>\r';
+
           text += '</div>\r';
           text += '</div>\r';
+          text += '<div class="col-10">\r';
+          text += '<div class="tab-content" id="v-pills-tabContent">\r';
+          
+          item.projects.forEach(function(project, p_index){
+            var modal_id = self.name+'_'+item.name+'_'+project.name;
+            text += '<div class="tab-pane fade'+(p_index == 0 ? ' show active' : '')+'" id="v-pills-'+p_index+'" role="tabpanel" aria-labelledby="v-pills-tab'+p_index+'">\r';
+            text += '<section>\r';
+            text += '<div class="row">\r';
+            text += '<div class="col-12">\r';
+            text += '<h4>'+project.title+'</h4>\r';
+            text += project.summary;
+            text += '</div>\r';
+            text += '<div class="col-12 col-sm-4 col-md-3">\r';
+            text += '<figure class="thumbnail">\r';
+            text += '<img class="img-fluid" src="'+project.image+'" data-toggle="modal" data-target="#'+modal_id+'">\r';
+            text += '</figure>\r';
+            text += '</div>\r';
+            text += '<div class="col-12 col-sm-8 col-md-9">\r';
+            text += '<ul>\r';
+            project.bullets.forEach(function(bullet){
+              text += '<li>'+bullet+'</li>\r';
+            });
+            text += '</ul>\r';
+            text += '</div>\r';
+            text += '</div>\r';
+            text += '</section>\r';
+            var modal = new Modal(project, modal_id);
+            text += modal.html;
+            text += '</div>\r';
+          });
+          
+          text += '</div>\r';
+          text += '</div>\r';
+          text += '</div>\r';
+
+
           text += '</section>\r';
-          var modal = new Modal(project, modal_id);
-          text += modal.html;
-          text += '</div>\r';
-        });
-        
-        text += '</div>\r';
-        text += '</div>\r';
-        text += '</div>\r';
-        
+        } 
         text += '</section>\r';
       });
       text += '</div>\r';
