@@ -15,6 +15,7 @@
 			{
 				"title": "About",
 				"name": "Jason Yim",
+				"link": "https://www.linkedin.com/in/yimjason/",
 				"jobTitle": "Web Developer",
 				"summary": "I like to use my creativity and mastery of programming to create awesome things.",
 				"image": "images/about/me.jpg",
@@ -25,8 +26,8 @@
 					"Ruby", 
 					"Ruby on Rails", 
 					"XML", 
-					"HTML5", 
-					"CSS3", 
+					"HTML", 
+					"CSS", 
 					"Javascript",
 					"ES6",
 					"Babel",
@@ -35,7 +36,8 @@
 					"Python", 
 					"Applescript", 
 					"jQuery", 
-					"Bootstrap",  
+					"Bootstrap",
+					"UI/UX",  
 					"AngularJS", 
 					"Firebase", 
 					"SASS", 
@@ -61,15 +63,17 @@
 					"name": "bec",
 					"abr": "BEC",
 					"company": "Benchmark Education Company",
+					"position": "Digital Production Specialist",
 					"start_date": "May 2016",
 					"end_date": "April 2019",
 					"image": "images/work/bec/logo.png",
 					"bullets":
 					[
-						"Worked with a small digital team to transform print products into digital formats.", 
-						"Created software to automate workflow using InDesign ExtendScript.",
-						"Created templates and prototypes from wireframes and work closely with editorial and design to perfect the user interface and experience.",
-						"Some of the technologies used: Javascript, VanillaJS, Applescript, python, XML, HTML, CSS, jQuery, Bootstrap 3 and 4, Foundation, JSON, AJAX, Adobe InDesign (also woodwing), Illustrator, Photoshop, etc."
+						"Saved company money from outsourcing",
+						"Fully automated workflow | Created the DMV (Digital Media Viewer)", 
+						"Reduced man-power needed for large projects (namely the iTRS)",						
+						"Fast prototyping and functional templates from wireframes",
+						"Customers love my work | they want more | they ask for quick releases"
 					],
 					"projects": 
 					[
@@ -330,18 +334,18 @@
 					]
 				},
 				{
-					"name": "ntt",
-					"abr": "NTT",
-					"company": "NTT Data",
-					"start_date": "September 2015",
+					"name": "canon",
+					"abr": "Canon",
+					"company": "Canon",
+					"position": "IT Consultant | through NTT Data",
+					"start_date": "July 2015",
 					"end_date": "May 2016",
-					"image": "images/work/ntt/logo.png",
+					"image": "images/work/canon/logo.png",
 					"bullets":
 					[
-						"Second assignment with NTT.",
-						"Worked at Canon’s Datacenter of Operations.",
-						"Used many software programs to monitor hardware, network, and application activities.",
-						"Daily tasks includes but not limited to: data storage and backup, mainframe maintenance, archiving and organizing data, and helping employees with hardware or software issues."
+						"Worked on Canon USA e-commerce site | <a href=\"https://www.usa.canon.com\" target=\"_blank\">https://www.usa.canon.com</a>", 
+						"Worked at Canon's Datacenter of Operations | Monitored hardware, network, and applications",
+						"Data storage and backup | mainframe maintenance | archiving and organizing data"
 					],
 					"projects": []
 				}	

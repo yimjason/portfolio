@@ -1,0 +1,399 @@
+body {
+    font-size: 10px;
+    font-family: 'Josefin Sans', helvetica, sans-serif;
+  }
+
+  nav {
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1.5em;
+  }
+
+  nav a,
+  nav a:hover{
+    color: black;
+  }
+
+
+  #app>section>div {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.8em;
+  }
+
+  #app>section>div h2{
+    letter-spacing: 0.2rem;
+  }
+
+  #about {
+    text-align: center;
+    padding: 6rem 1rem 8rem 1rem;
+    background-color: whitesmoke;
+  }
+
+  #about h2{ 
+    font-size: 3rem;
+    margin-bottom: 2rem;  
+  }
+
+  #about img {
+    border-radius: 50%;
+    box-shadow: 5px 5px 8px #ccc;
+    margin-bottom: 3rem;
+    padding: 6px;
+    background-color: white;
+  } 
+
+  #about .summary {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  #about .skills{
+    max-width: 800px; 
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #about .skills h3{
+    margin-bottom: 1rem;
+  }
+
+  #about .skills ul { 
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between; 
+  }
+
+  #about .skills li {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 2px;
+    background-color: white;
+  }
+
+  #work {
+    padding: 5rem 1rem 8rem 1rem;
+  } 
+
+  #work h2{
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  #work .company {
+    margin-bottom: 5rem; 
+  }
+
+  #work .company .logo{
+    padding: 2px;
+    border: 1px solid #ccc;
+    vertical-align: bottom;
+  }
+
+  #work .company ul{
+    margin-left: 1rem;
+  }
+
+  #work .company .position{
+    display: inline-block;
+  }
+
+  #work .company .dates{
+    float: right;
+    display: inline-block;
+    font-size: 0.8em;
+  }
+
+  #work .work_projects .tab-content{ 
+    background-color: whitesmoke;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px #ccc;
+  }
+
+  #work figure.thumbnail{
+    max-width: 150px;  
+    margin: 0 auto;
+  }
+
+  #work figure.thumbnail img{
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+    cursor: pointer;
+  }
+
+  #work figure.thumbnail img:hover{ 
+    /*opacity: 0.9;*/ 
+  }
+
+  #work .modal-body {    
+    padding: 0; 
+  }
+
+  #work .modal-body figure{    
+    margin: 0; 
+  }
+
+  #work .carousel-control-prev,
+  #work .carousel-control-next{
+    opacity: 0;
+  }
+
+  #work .carousel-control-prev:hover,
+  #work .carousel-control-next:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.1;
+  } 
+
+  #work .nav.nav-pills .nav-link{     
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin-bottom: 2px;  
+  }
+ 
+  #work .nav.nav-pills .nav-link.active{
+    background-color: #333;
+    border-radius: 0; 
+    border-color: #333;
+  }
+
+  #work .nav.nav-pills .nav-link.active:hover{
+    background-color: #333;  
+    border-radius: 0; 
+  }
+
+  #work .nav.nav-pills .nav-link:hover{
+    background-color: white;
+    border: 1px solid #333; 
+    border-radius: 0; 
+  }
+
+  #work a{
+    color: black; 
+  }
+
+  #work a.active{
+    color: white; 
+  }
+
+  #work a[data-toggle=modal]{
+    padding: 6px 8px 6px 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  #work a[data-toggle=modal]:hover{
+    background-color: #333;
+    color: white;
+    border-color: #333; 
+  }
+
+  ul, li{
+    margin: 0;
+    padding: 0; 
+  }
+  
+  ul{
+    margin-bottom: 1rem;
+  } 
+
+  #websites {
+    padding: 2rem;
+  }
+
+  #websites .gallery-item:nth-child(odd) {
+    background-color: #eaeaea;
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
+    clip-path: polygon(0 0, 100% 2%, 100% 98%, 0% 100%);
+    padding: 3rem;
+  }
+
+
+  #games {
+    text-align: center;
+    padding: 5rem 1rem 5rem 1rem;
+    background-color: #333;
+    color: whitesmoke;
+  }
+
+  #games .techs {
+    list-style: none;
+    padding: 0;
+  }
+
+  #games .techs li {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 6px;
+    margin: 2px;
+    background-color: transparent;
+  }
+
+  #games .gallery {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+    margin: 0 auto; 
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid #111;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:active .flip-card-inner {
+    /*transform: rotateY(180deg);*/
+  }
+
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+    cursor: pointer;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-color: #222;
+    padding: 1rem;
+  }
+
+  #artworks {
+    text-align: center;
+    padding: 5rem 1rem 5rem 1rem;
+    background-color: #222;
+    color: whitesmoke;
+  }
+
+  #artworks .gallery {
+    margin: 2rem 0 2rem 0;
+    min-height: 860px;
+  } 
+  #artworks .gallery .item {
+    margin: 0 auto;
+    max-width: 700px;
+  } 
+  #artworks .gallery .item img{
+    margin-bottom: 1rem;
+  } 
+  #artworks .gallery .item p {
+    text-align: left;
+  }
+
+
+
+  .carousel-indicators {
+    position: relative;      
+  } 
+
+  #contact {
+    background-color: whitesmoke;
+    height: 100%;
+    text-align: center;
+    padding: 5rem 1rem 5rem 1rem;
+    min-height: 180px;
+    margin: 0 auto; 
+  }
+
+
+
+  #contact p{
+    letter-spacing: 0.2rem;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+
+
+
+
+
+
+  #splash {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: stretch;
+    overflow: hidden;
+    background-color: black;
+  }
+
+  #splash .box {
+    padding: 4px;
+  }
+
+  #splash .artifact {
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+  }
+
+  #splash .square {
+    /*border: 5px solid black;*/
+    /*box-shadow: 3px 3px 3px #aaa;*/
+    border-radius: 50%;
+  }
+
+  #splash .frame {
+    /*border: 5px solid black; */
+    display: flex;
+    align-items: center;
+    /*box-shadow: 3px 3px 3px #aaa;*/
+    border-radius: 15px;
+    transition: 0.8s;
+  }
+
+  #splash .frame .inner-frame {
+    /*border: 5px solid black;*/
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+  }
