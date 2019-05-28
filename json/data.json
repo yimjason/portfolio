@@ -70,10 +70,10 @@
 					"bullets":
 					[
 						"Saved company money from outsourcing",
-						"Fully automated workflow | Created the DMV (Digital Media Viewer)", 
+						"Fully automated workflow &nbsp;|&nbsp; Created the DMV (Digital Media Viewer)", 
 						"Reduced man-power needed for large projects (namely the iTRS)",						
 						"Fast prototyping and functional templates from wireframes",
-						"Customers love my work | they want more | they ask for quick releases"
+						"Customers love my work &nbsp;|&nbsp; they want more &nbsp;|&nbsp; they ask for quick releases"
 					],
 					"projects": 
 					[
@@ -337,15 +337,15 @@
 					"name": "canon",
 					"abr": "Canon",
 					"company": "Canon",
-					"position": "IT Consultant | through NTT Data",
+					"position": "IT Consultant</i> &nbsp;|&nbsp; <i>through NTT Data",
 					"start_date": "July 2015",
 					"end_date": "May 2016",
 					"image": "images/work/canon/logo.png",
 					"bullets":
 					[
-						"Worked on Canon USA e-commerce site | <a href=\"https://www.usa.canon.com\" target=\"_blank\">https://www.usa.canon.com</a>", 
-						"Worked at Canon's Datacenter of Operations | Monitored hardware, network, and applications",
-						"Data storage and backup | mainframe maintenance | archiving and organizing data"
+						"Worked on Canon USA e-commerce site &nbsp;|&nbsp; <a href=\"https://www.usa.canon.com\" target=\"_blank\">https://www.usa.canon.com</a>", 
+						"Worked at Canon's Datacenter of Operations &nbsp;|&nbsp; Monitored hardware, network, and applications",
+						"Data storage and backup &nbsp;|&nbsp; mainframe maintenance &nbsp;|&nbsp; archiving and organizing data"
 					],
 					"projects": []
 				}	

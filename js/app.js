@@ -244,7 +244,7 @@ Number.prototype.forEvery = function(fn) {
         text += '<img class="logo" src="'+item.image+'" width="80" height="80">\r';
         text += item.company; 
         text += '</h3>\r'; 
-        text += '<p class="position"><em>'+item.position+'</em></p>\r';
+        text += '<p class="position"><i>'+item.position+'</i></p>\r';
         text += '<p class="dates">'+item.start_date+' - '+item.end_date+'</p>\r';
 
         text += '<ul>\r';
