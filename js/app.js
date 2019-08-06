@@ -128,21 +128,21 @@ Number.prototype.forEvery = function(fn) {
       text += '<section id="' + this.name + '">\r';
       text += '<div>\r';
       text += '<h2>' + content.name + '</h2>\r';
-      text += '<a href="'+content.link+'" target="_blank">\r';
-      text += '<img class="img-fluid" src="' + content.image + '">\r';
-      text += '</a>\r';
+      // text += '<a href="'+content.link+'" target="_blank">\r';
+      // text += '<img class="img-fluid" src="' + content.image + '">\r';
+      // text += '</a>\r';
       text += '<h3>' + content.jobTitle + '</h3>\r';
       text += '<p class="summary">' + content.summary + '</p>\r';
 
-      text += '<section class="skills">\r';
-      text += '<h3>Skills and Knowledge</h3>\r';
-      text += '<ul>\r';
-      content.skills = content.skills.sort();
-      content.skills.forEach(function(skill) {
-        text += '<li>' + skill + '</li>\r';
-      });
-      text += '</ul>\r';
-      text += '</section>\r';
+      // text += '<section class="skills">\r';
+      // text += '<h3>Skills and Knowledge</h3>\r';
+      // text += '<ul>\r';
+      // content.skills = content.skills.sort();
+      // content.skills.forEach(function(skill) {
+      //   text += '<li>' + skill + '</li>\r';
+      // });
+      // text += '</ul>\r';
+      // text += '</section>\r';
       text += '</div>\r';
 
       text += '</section>\r';
@@ -361,7 +361,7 @@ Number.prototype.forEvery = function(fn) {
       text += '<p>' + this.content.summary + '</p>\r';
       text += '<div class="gallery">\r';
       this.gallery.forEach(function(item, index) {
-        text += '<div class="gallery-item">\r';
+        text += '<div class="gallery-item col-6 col-md-4">\r';
 
         text += '<div class="flip-card">\r';
         text += '<div class="flip-card-inner">\r';

@@ -350,7 +350,7 @@
 					"projects": []
 				}	
 			],
-			"display": true
+			"display": false
 		},
 		{
 			"name": "websites",
@@ -516,7 +516,7 @@
 				"phone": "917-520-2240"
 			},
 			"gallery": [],
-			"display": true
+			"display": false
 		}
 	]
 }
